@@ -1,6 +1,9 @@
 use clap::Parser;
+use futures::future::join_all;
 use scraper::{Html, Selector};
-use std::collections::{HashSet, VecDeque};
+use std::collections::HashSet;
+use std::sync::Arc;
+use tokio::sync::Mutex;
 use url::Url;
 
 /// RustCrawler - A web crawler written in Rust
@@ -19,18 +22,17 @@ struct Args {
     /// Maximum number of pages to visit
     #[arg(short, long, default_value_t = 50)]
     max_pages: u32,
+
+    /// Number of concurrent workers
+    #[arg(short, long, default_value_t = 5)]
+    workers: usize,
 }
 
-fn fetch_page(url: &str) -> Result<String, reqwest::Error> {
-    let client = reqwest::blocking::Client::builder()
-        .user_agent("RustCrawler/0.1")
-        .timeout(std::time::Duration::from_secs(10))
-        .build()?;
-
-    let response = client.get(url).send()?;
+// async fn: this function can be suspended while waiting for network
+async fn fetch_page(client: &reqwest::Client, url: &str) -> Result<String, reqwest::Error> {
+    let response = client.get(url).send().await?;  // .await = "pause here, let others run"
     println!("  [{}] {}", response.status(), url);
-
-    let body = response.text()?;
+    let body = response.text().await?;
     Ok(body)
 }
 
@@ -73,76 +75,112 @@ fn extract_links(html: &str, base_url: &str) -> Vec<String> {
     links
 }
 
-fn crawl(start_url: &str, max_depth: u32, max_pages: u32) {
-    // Queue holds (url, depth) pairs
-    let mut queue: VecDeque<(String, u32)> = VecDeque::new();
+async fn crawl(start_url: &str, max_depth: u32, max_pages: u32, workers: usize) {
+    let client = reqwest::Client::builder()
+        .user_agent("RustCrawler/0.1")
+        .timeout(std::time::Duration::from_secs(10))
+        .build()
+        .unwrap();
 
-    // Track visited URLs so we never fetch the same page twice
-    let mut visited: HashSet<String> = HashSet::new();
+    // Arc = shared ownership, Mutex = only one task modifies at a time
+    let visited: Arc<Mutex<HashSet<String>>> = Arc::new(Mutex::new(HashSet::new()));
+    let pages_crawled: Arc<Mutex<u32>> = Arc::new(Mutex::new(0));
+    let broken_links: Arc<Mutex<u32>> = Arc::new(Mutex::new(0));
 
-    let mut pages_crawled = 0;
-    let mut broken_links = 0;
-
-    // Seed the queue with the starting URL at depth 0
-    queue.push_back((start_url.to_string(), 0));
-    visited.insert(start_url.to_string());
+    // Current frontier = URLs to fetch at the current depth level
+    let mut current_frontier = vec![start_url.to_string()];
+    visited.lock().await.insert(start_url.to_string());
 
     println!("Starting crawl from: {}", start_url);
-    println!("Max depth: {}  |  Max pages: {}", max_depth, max_pages);
+    println!("Max depth: {}  |  Max pages: {}  |  Workers: {}", max_depth, max_pages, workers);
     println!("{}", "-".repeat(60));
 
-    while let Some((url, depth)) = queue.pop_front() {
-        // Stop if we've hit the page limit
-        if pages_crawled >= max_pages {
-            println!("\nReached max pages limit ({}).", max_pages);
+    for depth in 0..=max_depth {
+        if current_frontier.is_empty() {
             break;
         }
 
-        // Stop going deeper if we've hit the depth limit
-        if depth > max_depth {
-            continue;
+        // Check if we've already hit the page limit
+        if *pages_crawled.lock().await >= max_pages {
+            break;
         }
 
-        // Fetch the page
-        match fetch_page(&url) {
-            Ok(body) => {
-                pages_crawled += 1;
+        println!("\n[Depth {}] Fetching {} URLs concurrently...", depth, current_frontier.len());
 
-                // Only extract links if we haven't hit max depth yet
-                if depth < max_depth {
-                    let links = extract_links(&body, &url);
+        // Next depth's URLs collected here
+        let next_frontier: Arc<Mutex<Vec<String>>> = Arc::new(Mutex::new(Vec::new()));
 
-                    for link in links {
-                        // Only add links we haven't seen yet
-                        if !visited.contains(&link) {
-                            visited.insert(link.clone());
-                            queue.push_back((link, depth + 1));
+        // Process current frontier in chunks of `workers` size
+        for chunk in current_frontier.chunks(workers) {
+            // Build a list of async tasks, one per URL in this chunk
+            let tasks: Vec<_> = chunk.iter().map(|url| {
+                let client = client.clone();
+                let url = url.clone();
+                let visited = Arc::clone(&visited);
+                let next_frontier = Arc::clone(&next_frontier);
+                let pages_crawled = Arc::clone(&pages_crawled);
+                let broken_links = Arc::clone(&broken_links);
+
+                // Spawn each URL fetch as an independent async task
+                tokio::spawn(async move {
+                    // Stop if page limit hit
+                    if *pages_crawled.lock().await >= max_pages {
+                        return;
+                    }
+
+                    match fetch_page(&client, &url).await {
+                        Ok(body) => {
+                            *pages_crawled.lock().await += 1;
+
+                            if depth < max_depth {
+                                let links = extract_links(&body, &url);
+                                let mut visited = visited.lock().await;
+                                let mut next = next_frontier.lock().await;
+
+                                for link in links {
+                                    if !visited.contains(&link) {
+                                        visited.insert(link.clone());
+                                        next.push(link);
+                                    }
+                                }
+                            }
+                        }
+                        Err(e) => {
+                            *broken_links.lock().await += 1;
+                            println!("  [ERROR] {} — {}", url, e);
                         }
                     }
-                }
-            }
-            Err(e) => {
-                broken_links += 1;
-                println!("  [ERROR] {} — {}", url, e);
-            }
+                })
+            }).collect();
+
+            // Wait for all tasks in this chunk to finish before next chunk
+            join_all(tasks).await;
         }
+
+        // Move to next depth
+        current_frontier = Arc::try_unwrap(next_frontier)
+            .unwrap()
+            .into_inner();
     }
 
-    println!("{}", "-".repeat(60));
+    println!("\n{}", "-".repeat(60));
     println!("Crawl complete.");
-    println!("  Pages crawled : {}", pages_crawled);
-    println!("  Broken links  : {}", broken_links);
-    println!("  URLs found    : {}", visited.len());
+    println!("  Pages crawled : {}", *pages_crawled.lock().await);
+    println!("  Broken links  : {}", *broken_links.lock().await);
+    println!("  URLs found    : {}", visited.lock().await.len());
 }
 
-fn main() {
+// #[tokio::main] turns main() into an async entry point
+#[tokio::main]
+async fn main() {
     let args = Args::parse();
 
     println!("RustCrawler starting...");
     println!("  URL       : {}", args.url);
     println!("  Depth     : {}", args.depth);
     println!("  Max pages : {}", args.max_pages);
+    println!("  Workers   : {}", args.workers);
     println!();
 
-    crawl(&args.url, args.depth, args.max_pages);
+    crawl(&args.url, args.depth, args.max_pages, args.workers).await;
 }
