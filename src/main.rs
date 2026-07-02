@@ -67,6 +67,7 @@ async fn main() {
     let total_time = start.elapsed().as_secs_f64();
 
     analytics::print_summary(&records, total_time);
+    analytics::print_analytics(&records, &edges, &args.url);
 
     println!("\nExporting CSV...");
     exporter::export_csv(&records, &args.output);

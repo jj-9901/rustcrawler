@@ -1,498 +1,1723 @@
 {
-  "avg_response_ms": 459,
+  "avg_response_ms": 717,
   "broken_links": 0,
   "edges": [
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://en.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://ja.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books_1/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://de.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/travel_2/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://ru.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/mystery_3/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://fr.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://es.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://zh.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/classics_6/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://it.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://pl.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/romance_8/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://pt.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://ar.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/fiction_10/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://de.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/childrens_11/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://en.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/religion_12/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://es.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://fa.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/music_14/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://fr.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/default_15/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://it.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/science-fiction_16/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://arz.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/sports-and-games_17/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://nl.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://ja.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://pl.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/new-adult_20/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://pt.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/young-adult_21/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://ceb.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/science_22/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://sv.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/poetry_23/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://uk.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/paranormal_24/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://vi.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/art_25/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://war.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/psychology_26/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://zh.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/autobiography_27/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://ru.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/parenting_28/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://af.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/adult-fiction_29/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://sq.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/humor_30/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://ast.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/horror_31/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://az.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/history_32/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://bg.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/food-and-drink_33/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://zh-min-nan.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/christian-fiction_34/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://bn.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/business_35/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://be.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/biography_36/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://ca.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/thriller_37/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://cs.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/contemporary_38/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://cy.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/spirituality_39/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://da.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/academic_40/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://et.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/self-help_41/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://el.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/historical_42/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://eo.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/christian_43/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://eu.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/suspense_44/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://gl.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/short-stories_45/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://ko.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/novels_46/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://ha.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/health_47/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://hy.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/politics_48/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://hi.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/cultural_49/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://hr.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/erotica_50/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://id.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/category/books/crime_51/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://he.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://ka.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/a-light-in-the-attic_1000/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://lld.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://la.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://lv.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/soumission_998/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://lt.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/soumission_998/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://hu.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/sharp-objects_997/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://mk.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/sharp-objects_997/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://mg.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://mr.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/sapiens-a-brief-history-of-humankind_996/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://ms.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/the-requiem-red_995/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://min.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/the-requiem-red_995/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://my.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://no.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/the-dirty-little-secrets-of-getting-your-dream-job_994/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://nn.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://ce.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/the-coming-woman-a-novel-based-on-the-life-of-the-infamous-feminist-victoria-woodhull_993/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://uz.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://kk.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/the-boys-in-the-boat-nine-americans-and-their-epic-quest-for-gold-at-the-1936-berlin-olympics_992/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://ro.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/the-black-maria_991/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://simple.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/the-black-maria_991/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://sk.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/starving-hearts-triangular-trade-trilogy-1_990/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://sl.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/starving-hearts-triangular-trade-trilogy-1_990/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://sr.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/shakespeares-sonnets_989/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://sh.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/shakespeares-sonnets_989/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://fi.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/set-me-free_988/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://sw.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/set-me-free_988/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://ta.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://tt.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/scott-pilgrims-precious-little-life-scott-pilgrim-1_987/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://te.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/rip-it-up-and-start-again_986/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://th.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/rip-it-up-and-start-again_986/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://tg.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://azb.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/our-band-could-be-your-life-scenes-from-the-american-indie-underground-1981-1991_985/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://tr.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/olio_984/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://ur.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/olio_984/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://zh-yue.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://ace.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/mesaerion-the-best-science-fiction-stories-1800-1849_983/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://als.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/libertarianism-for-beginners_982/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://am.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/libertarianism-for-beginners_982/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://an.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://hyw.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/its-only-the-himalayas_981/index.html"
+      "from": "https://wikipedia.org",
+      "to": "https://gor.wikipedia.org/"
     },
     {
-      "from": "https://books.toscrape.com",
-      "to": "https://books.toscrape.com/catalogue/page-2.html"
+      "from": "https://wikipedia.org",
+      "to": "https://ban.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://bjn.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://map-bms.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ba.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://be-tarask.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://bcl.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://bpy.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://bar.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://bs.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://br.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://cv.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://dag.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ary.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://nv.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://eml.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://hif.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://fo.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://fy.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ff.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ga.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://gd.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://glk.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://gu.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://hak.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://hsb.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://io.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ig.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ilo.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ia.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ie.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://os.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://is.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://jv.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://kn.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://pam.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://km.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ks.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://avk.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ht.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ku.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ckb.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ky.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://mrj.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://lb.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://lij.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://li.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://lmo.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://mai.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ml.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://xmf.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://mzn.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://cdo.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://mn.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://nap.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://new.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://frr.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://oc.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://mhr.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://or.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://as.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://pa.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://pnb.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ps.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://pms.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://nds.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://kaa.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://crh.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://qu.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://rue.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://sa.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://sat.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://skr.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://sah.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://sco.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://sn.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://scn.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://si.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://sd.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://szl.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://so.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://su.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://shi.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://tl.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://shn.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://zgh.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://tly.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://tum.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://bug.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://vec.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://vo.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://wa.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://zh-classical.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://wuu.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://yi.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://yo.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://diq.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://bat-smg.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://zu.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ne.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://mni.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://lad.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://kbd.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ang.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://smn.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://anp.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ab.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://roa-rup.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://frp.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://atj.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://arc.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://gn.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://av.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ay.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://bbc.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://bew.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://bh.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://bi.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://bo.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://bxr.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://cbk-zam.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ny.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://co.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://za.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://dga.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://se.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://pdc.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://dv.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://dsb.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://myv.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ext.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ee.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://gur.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://fon.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://fur.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://gv.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://gag.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://inh.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://gpe.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ki.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://gan.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://guw.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://got.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://xal.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://haw.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://igl.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://rw.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://iba.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://kbp.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://dtp.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://knc.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://kai.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://csb.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://kw.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://kv.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://koi.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://kg.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://gom.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://gcr.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://kge.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://kus.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://lo.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://lbe.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ltg.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://lez.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://nia.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ln.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://lfn.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://olo.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://jbo.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://lg.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://mad.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://mt.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://btm.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://mi.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://fat.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://mwl.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://mdf.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://mnw.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://mos.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://nqo.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://fj.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://nah.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://pcm.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://nds-nl.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://nrm.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://nov.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://om.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://blk.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://pag.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ami.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://pap.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://jam.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://pfl.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://pcd.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://krc.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ksh.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://rm.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://rsk.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://szy.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://sm.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://sc.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://trv.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://stq.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://st.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://nso.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://tn.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://syl.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://cu.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://srn.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ss.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ty.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://kab.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://roa-tara.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://tay.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://tet.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://tpi.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://tok.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://to.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://chr.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://chy.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ts.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://tk.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://tw.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://kcg.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://tyv.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://udm.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ug.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://vep.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://fiu-vro.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://vls.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://wo.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://xh.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://zea.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://alt.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://awa.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://dty.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://tcy.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://rki.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://bdr.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://bm.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ch.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://dz.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://iu.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ik.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://nr.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://kaj.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ppl.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://nup.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ann.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://pi.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://pwn.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://pnt.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://rmy.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://rn.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://sg.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://tdd.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ti.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://din.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ve.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://guc.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://ady.wikipedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://meta.wikimedia.org/wiki/Special:MyLanguage/List_of_Wikipedias"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://donate.wikimedia.org/?wmf_medium=portal&wmf_campaign=portalFooter&wmf_source=portalFooter"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://en.wikipedia.org/wiki/List_of_Wikipedia_mobile_applications"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://play.google.com/store/apps/details?id=org.wikipedia&referrer=utm_source%3Dportal%26utm_medium%3Dbutton%26anid%3Dadmob"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://itunes.apple.com/app/apple-store/id324715238?pt=208305&ct=portal&mt=8"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://commons.wikimedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://www.wikivoyage.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://www.wiktionary.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://www.wikibooks.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://www.wikidata.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://www.wikiversity.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://www.wikiquote.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://www.mediawiki.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://www.wikisource.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://species.wikimedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://www.wikifunctions.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://meta.wikimedia.org/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Terms_of_Use"
+    },
+    {
+      "from": "https://wikipedia.org",
+      "to": "https://foundation.wikimedia.org/wiki/Special:MyLanguage/Policy:Privacy_policy"
     }
   ],
   "pages": [
     {
       "depth": 0,
-      "links_found": 94,
-      "response_time_ms": 1162,
+      "links_found": 374,
+      "response_time_ms": 762,
       "status": "200 OK",
-      "url": "https://books.toscrape.com"
+      "url": "https://wikipedia.org"
     },
     {
       "depth": 1,
       "links_found": 0,
-      "response_time_ms": 208,
+      "response_time_ms": 427,
       "status": "200 OK",
-      "url": "https://books.toscrape.com/index.html"
+      "url": "https://de.wikipedia.org/"
     },
     {
       "depth": 1,
       "links_found": 0,
-      "response_time_ms": 417,
+      "response_time_ms": 453,
       "status": "200 OK",
-      "url": "https://books.toscrape.com/catalogue/category/books_1/index.html"
+      "url": "https://en.wikipedia.org/"
     },
     {
       "depth": 1,
       "links_found": 0,
-      "response_time_ms": 626,
+      "response_time_ms": 457,
       "status": "200 OK",
-      "url": "https://books.toscrape.com/catalogue/category/books/travel_2/index.html"
+      "url": "https://zh.wikipedia.org/"
     },
     {
       "depth": 1,
       "links_found": 0,
-      "response_time_ms": 1034,
+      "response_time_ms": 491,
       "status": "200 OK",
-      "url": "https://books.toscrape.com/catalogue/category/books/mystery_3/index.html"
+      "url": "https://ru.wikipedia.org/"
     },
     {
       "depth": 1,
       "links_found": 0,
-      "response_time_ms": 1064,
+      "response_time_ms": 501,
       "status": "200 OK",
-      "url": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html"
+      "url": "https://ja.wikipedia.org/"
     },
     {
       "depth": 1,
       "links_found": 0,
-      "response_time_ms": 207,
+      "response_time_ms": 628,
       "status": "200 OK",
-      "url": "https://books.toscrape.com/catalogue/category/books/romance_8/index.html"
+      "url": "https://fr.wikipedia.org/"
     },
     {
       "depth": 1,
       "links_found": 0,
-      "response_time_ms": 209,
+      "response_time_ms": 641,
       "status": "200 OK",
-      "url": "https://books.toscrape.com/catalogue/category/books/classics_6/index.html"
+      "url": "https://pl.wikipedia.org/"
     },
     {
       "depth": 1,
       "links_found": 0,
-      "response_time_ms": 213,
+      "response_time_ms": 673,
       "status": "200 OK",
-      "url": "https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html"
+      "url": "https://it.wikipedia.org/"
     },
     {
       "depth": 1,
       "links_found": 0,
-      "response_time_ms": 445,
+      "response_time_ms": 797,
       "status": "200 OK",
-      "url": "https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html"
+      "url": "https://es.wikipedia.org/"
     },
     {
       "depth": 1,
       "links_found": 0,
-      "response_time_ms": 676,
+      "response_time_ms": 1674,
       "status": "200 OK",
-      "url": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html"
+      "url": "https://pt.wikipedia.org/"
     },
     {
       "depth": 1,
       "links_found": 0,
-      "response_time_ms": 210,
+      "response_time_ms": 390,
       "status": "200 OK",
-      "url": "https://books.toscrape.com/catalogue/category/books/fiction_10/index.html"
+      "url": "https://ceb.wikipedia.org/"
     },
     {
       "depth": 1,
       "links_found": 0,
-      "response_time_ms": 212,
+      "response_time_ms": 418,
       "status": "200 OK",
-      "url": "https://books.toscrape.com/catalogue/category/books/childrens_11/index.html"
+      "url": "https://uk.wikipedia.org/"
     },
     {
       "depth": 1,
       "links_found": 0,
-      "response_time_ms": 214,
+      "response_time_ms": 452,
       "status": "200 OK",
-      "url": "https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html"
+      "url": "https://fa.wikipedia.org/"
     },
     {
       "depth": 1,
       "links_found": 0,
-      "response_time_ms": 223,
+      "response_time_ms": 472,
       "status": "200 OK",
-      "url": "https://books.toscrape.com/catalogue/category/books/music_14/index.html"
+      "url": "https://war.wikipedia.org/"
     },
     {
       "depth": 1,
       "links_found": 0,
-      "response_time_ms": 227,
+      "response_time_ms": 582,
       "status": "200 OK",
-      "url": "https://books.toscrape.com/catalogue/category/books/religion_12/index.html"
+      "url": "https://sv.wikipedia.org/"
+    },
+    {
+      "depth": 1,
+      "links_found": 0,
+      "response_time_ms": 631,
+      "status": "200 OK",
+      "url": "https://arz.wikipedia.org/"
+    },
+    {
+      "depth": 1,
+      "links_found": 0,
+      "response_time_ms": 672,
+      "status": "200 OK",
+      "url": "https://af.wikipedia.org/"
+    },
+    {
+      "depth": 1,
+      "links_found": 0,
+      "response_time_ms": 718,
+      "status": "200 OK",
+      "url": "https://ar.wikipedia.org/"
+    },
+    {
+      "depth": 1,
+      "links_found": 0,
+      "response_time_ms": 863,
+      "status": "200 OK",
+      "url": "https://vi.wikipedia.org/"
+    },
+    {
+      "depth": 1,
+      "links_found": 0,
+      "response_time_ms": 912,
+      "status": "200 OK",
+      "url": "https://nl.wikipedia.org/"
+    },
+    {
+      "depth": 1,
+      "links_found": 0,
+      "response_time_ms": 439,
+      "status": "200 OK",
+      "url": "https://bn.wikipedia.org/"
+    },
+    {
+      "depth": 1,
+      "links_found": 0,
+      "response_time_ms": 517,
+      "status": "200 OK",
+      "url": "https://ca.wikipedia.org/"
+    },
+    {
+      "depth": 1,
+      "links_found": 0,
+      "response_time_ms": 661,
+      "status": "200 OK",
+      "url": "https://az.wikipedia.org/"
+    },
+    {
+      "depth": 1,
+      "links_found": 0,
+      "response_time_ms": 671,
+      "status": "200 OK",
+      "url": "https://be.wikipedia.org/"
+    },
+    {
+      "depth": 1,
+      "links_found": 0,
+      "response_time_ms": 689,
+      "status": "200 OK",
+      "url": "https://ast.wikipedia.org/"
+    },
+    {
+      "depth": 1,
+      "links_found": 0,
+      "response_time_ms": 712,
+      "status": "200 OK",
+      "url": "https://cy.wikipedia.org/"
+    },
+    {
+      "depth": 1,
+      "links_found": 0,
+      "response_time_ms": 717,
+      "status": "200 OK",
+      "url": "https://zh-min-nan.wikipedia.org/"
+    },
+    {
+      "depth": 1,
+      "links_found": 0,
+      "response_time_ms": 881,
+      "status": "200 OK",
+      "url": "https://sq.wikipedia.org/"
+    },
+    {
+      "depth": 1,
+      "links_found": 0,
+      "response_time_ms": 1609,
+      "status": "200 OK",
+      "url": "https://cs.wikipedia.org/"
+    },
+    {
+      "depth": 1,
+      "links_found": 0,
+      "response_time_ms": 1720,
+      "status": "200 OK",
+      "url": "https://bg.wikipedia.org/"
     }
   ],
-  "successful": 16,
-  "total_pages": 16
+  "successful": 31,
+  "total_pages": 31
 }
