@@ -1,5 +1,6 @@
 use clap::Parser;
 use scraper::{Html, Selector};
+use std::collections::{HashSet, VecDeque};
 use url::Url;
 
 /// RustCrawler - A web crawler written in Rust
@@ -23,11 +24,11 @@ struct Args {
 fn fetch_page(url: &str) -> Result<String, reqwest::Error> {
     let client = reqwest::blocking::Client::builder()
         .user_agent("RustCrawler/0.1")
+        .timeout(std::time::Duration::from_secs(10))
         .build()?;
 
     let response = client.get(url).send()?;
-
-    println!("  Status : {}", response.status());
+    println!("  [{}] {}", response.status(), url);
 
     let body = response.text()?;
     Ok(body)
@@ -35,11 +36,8 @@ fn fetch_page(url: &str) -> Result<String, reqwest::Error> {
 
 fn extract_links(html: &str, base_url: &str) -> Vec<String> {
     let document = Html::parse_document(html);
-
-    // CSS selector that finds all <a> tags
     let selector = Selector::parse("a[href]").unwrap();
 
-    // Parse the base URL so we can resolve relative links
     let base = match Url::parse(base_url) {
         Ok(u) => u,
         Err(_) => return vec![],
@@ -48,13 +46,11 @@ fn extract_links(html: &str, base_url: &str) -> Vec<String> {
     let mut links = Vec::new();
 
     for element in document.select(&selector) {
-        // Get the href attribute value
         let href = match element.value().attr("href") {
             Some(h) => h,
             None => continue,
         };
 
-        // Skip anchors, mailto, javascript links
         if href.starts_with('#')
             || href.starts_with("mailto:")
             || href.starts_with("javascript:")
@@ -62,13 +58,11 @@ fn extract_links(html: &str, base_url: &str) -> Vec<String> {
             continue;
         }
 
-        // Resolve relative URLs like /about → https://example.com/about
         let full_url = match base.join(href) {
             Ok(u) => u,
             Err(_) => continue,
         };
 
-        // Only keep http and https links
         if full_url.scheme() != "http" && full_url.scheme() != "https" {
             continue;
         }
@@ -77,6 +71,68 @@ fn extract_links(html: &str, base_url: &str) -> Vec<String> {
     }
 
     links
+}
+
+fn crawl(start_url: &str, max_depth: u32, max_pages: u32) {
+    // Queue holds (url, depth) pairs
+    let mut queue: VecDeque<(String, u32)> = VecDeque::new();
+
+    // Track visited URLs so we never fetch the same page twice
+    let mut visited: HashSet<String> = HashSet::new();
+
+    let mut pages_crawled = 0;
+    let mut broken_links = 0;
+
+    // Seed the queue with the starting URL at depth 0
+    queue.push_back((start_url.to_string(), 0));
+    visited.insert(start_url.to_string());
+
+    println!("Starting crawl from: {}", start_url);
+    println!("Max depth: {}  |  Max pages: {}", max_depth, max_pages);
+    println!("{}", "-".repeat(60));
+
+    while let Some((url, depth)) = queue.pop_front() {
+        // Stop if we've hit the page limit
+        if pages_crawled >= max_pages {
+            println!("\nReached max pages limit ({}).", max_pages);
+            break;
+        }
+
+        // Stop going deeper if we've hit the depth limit
+        if depth > max_depth {
+            continue;
+        }
+
+        // Fetch the page
+        match fetch_page(&url) {
+            Ok(body) => {
+                pages_crawled += 1;
+
+                // Only extract links if we haven't hit max depth yet
+                if depth < max_depth {
+                    let links = extract_links(&body, &url);
+
+                    for link in links {
+                        // Only add links we haven't seen yet
+                        if !visited.contains(&link) {
+                            visited.insert(link.clone());
+                            queue.push_back((link, depth + 1));
+                        }
+                    }
+                }
+            }
+            Err(e) => {
+                broken_links += 1;
+                println!("  [ERROR] {} — {}", url, e);
+            }
+        }
+    }
+
+    println!("{}", "-".repeat(60));
+    println!("Crawl complete.");
+    println!("  Pages crawled : {}", pages_crawled);
+    println!("  Broken links  : {}", broken_links);
+    println!("  URLs found    : {}", visited.len());
 }
 
 fn main() {
@@ -88,23 +144,5 @@ fn main() {
     println!("  Max pages : {}", args.max_pages);
     println!();
 
-    println!("Fetching page...");
-    match fetch_page(&args.url) {
-        Ok(body) => {
-            println!("  Got {} bytes", body.len());
-            println!();
-
-            println!("Extracting links...");
-            let links = extract_links(&body, &args.url);
-            println!("  Found {} links", links.len());
-            println!();
-
-            for link in &links {
-                println!("  {}", link);
-            }
-        }
-        Err(e) => {
-            println!("  Error fetching page: {}", e);
-        }
-    }
+    crawl(&args.url, args.depth, args.max_pages);
 }
