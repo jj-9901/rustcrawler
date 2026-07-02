@@ -39,6 +39,10 @@ struct Args {
     /// Output graph DOT file path
     #[arg(short, long, default_value = "graph.dot")]
     graph: String,
+
+    /// Output JSON file path
+    #[arg(short, long, default_value = "crawl_results.json")]
+    json: String,
 }
 
 #[derive(Debug, Serialize, Clone)]
@@ -51,7 +55,7 @@ struct PageRecord {
 }
 
 // Stores an edge: page A links to page B
-#[derive(Debug, Clone)]
+#[derive(Debug, Clone, Serialize)]
 struct LinkEdge {
     from: String,
     to: String,
@@ -318,6 +322,30 @@ async fn crawl(
     let edges = Arc::try_unwrap(edges).unwrap().into_inner();
     (records, edges)
 }
+fn export_json(records: &[PageRecord], edges: &[LinkEdge], path: &str) {
+    let ok: Vec<_> = records.iter().filter(|r| r.status != "ERROR").collect();
+    let avg_response_ms = if ok.is_empty() {
+        0
+    } else {
+        ok.iter().map(|r| r.response_time_ms).sum::<u128>() / ok.len() as u128
+    };
+
+    let output = serde_json::json!({
+        "total_pages": records.len(),
+        "successful": ok.len(),
+        "broken_links": records.iter().filter(|r| r.status == "ERROR").count(),
+        "avg_response_ms": avg_response_ms,
+        "pages": records,
+        "edges": edges.iter().map(|e| serde_json::json!({
+            "from": e.from,
+            "to": e.to
+        })).collect::<Vec<_>>()
+    });
+
+    fs::write(path, serde_json::to_string_pretty(&output).unwrap())
+        .expect("Could not write JSON file");
+    println!("  Saved to: {}", path);
+}
 
 #[tokio::main]
 async fn main() {
@@ -330,6 +358,7 @@ async fn main() {
     println!("  Workers   : {}", args.workers);
     println!("  Output    : {}", args.output);
     println!("  Graph     : {}", args.graph);
+    println!("  JSON      : {}", args.json);   // add this line with the others at the top
     println!();
 
     let start = Instant::now();
@@ -346,4 +375,6 @@ async fn main() {
     println!("  Nodes : {}", graph.node_count());
     println!("  Edges : {}", graph.edge_count());
     export_graph(&graph, &args.graph);
+    println!("\nExporting JSON...");
+    export_json(&records, &edges, &args.json);
 }
