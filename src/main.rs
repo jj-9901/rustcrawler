@@ -1,8 +1,11 @@
 use clap::Parser;
 use futures::future::join_all;
+use petgraph::dot::{Config, Dot};
+use petgraph::graph::DiGraph;
 use scraper::{Html, Selector};
 use serde::Serialize;
-use std::collections::HashSet;
+use std::collections::{HashMap, HashSet};
+use std::fs;
 use std::sync::Arc;
 use std::time::Instant;
 use tokio::sync::Mutex;
@@ -32,9 +35,12 @@ struct Args {
     /// Output CSV file path
     #[arg(short, long, default_value = "crawl_results.csv")]
     output: String,
+
+    /// Output graph DOT file path
+    #[arg(short, long, default_value = "graph.dot")]
+    graph: String,
 }
 
-// Each crawled page becomes one of these records
 #[derive(Debug, Serialize, Clone)]
 struct PageRecord {
     url: String,
@@ -42,6 +48,13 @@ struct PageRecord {
     depth: u32,
     links_found: usize,
     response_time_ms: u128,
+}
+
+// Stores an edge: page A links to page B
+#[derive(Debug, Clone)]
+struct LinkEdge {
+    from: String,
+    to: String,
 }
 
 async fn fetch_page(
@@ -85,29 +98,73 @@ fn extract_links(html: &str, base_url: &str) -> Vec<String> {
             Err(_) => continue,
         };
 
+        let full_url = &mut full_url.clone();
+        full_url.set_fragment(None);
+
         if full_url.scheme() != "http" && full_url.scheme() != "https" {
             continue;
         }
 
-        links.push(full_url.to_string());
+        links.push(full_url.to_string())
     }
 
     links
 }
 
+fn build_graph(edges: &[LinkEdge]) -> DiGraph<String, ()> {
+    let mut graph = DiGraph::new();
+    let mut node_map: HashMap<String, petgraph::graph::NodeIndex> = HashMap::new();
+    // Track seen (from, to) pairs to avoid duplicate edges
+    let mut seen_edges: HashSet<(String, String)> = HashSet::new();
+
+    for edge in edges {
+        let edge_key = (edge.from.clone(), edge.to.clone());
+        if seen_edges.contains(&edge_key) {
+            continue;  // skip duplicate
+        }
+        seen_edges.insert(edge_key);
+
+        let from_idx = if let Some(&idx) = node_map.get(&edge.from) {
+            idx
+        } else {
+            let idx = graph.add_node(edge.from.clone());
+            node_map.insert(edge.from.clone(), idx);
+            idx
+        };
+
+        let to_idx = if let Some(&idx) = node_map.get(&edge.to) {
+            idx
+        } else {
+            let idx = graph.add_node(edge.to.clone());
+            node_map.insert(edge.to.clone(), idx);
+            idx
+        };
+
+        graph.add_edge(from_idx, to_idx, ());
+    }
+
+    graph
+}
+
+fn export_graph(graph: &DiGraph<String, ()>, path: &str) {
+    // DOT format is a standard graph description language
+    // readable by Graphviz and many online viewers
+    let dot = format!("{:?}", Dot::with_config(graph, &[Config::EdgeNoLabel]));
+    fs::write(path, dot).expect("Could not write graph file");
+    println!("  Saved to: {}", path);
+    println!("  View at : https://dreampuf.github.io/GraphvizOnline");
+}
+
 fn export_csv(records: &[PageRecord], path: &str) {
     let mut writer = csv::Writer::from_path(path).expect("Could not create CSV file");
-
     for record in records {
         writer.serialize(record).expect("Could not write record");
     }
-
     writer.flush().expect("Could not flush CSV");
     println!("  Saved to: {}", path);
 }
 
 fn print_summary(records: &[PageRecord], total_time_secs: f64) {
-    let total = records.len();
     let broken: Vec<_> = records.iter().filter(|r| r.status == "ERROR").collect();
     let successful: Vec<_> = records.iter().filter(|r| r.status != "ERROR").collect();
 
@@ -119,7 +176,7 @@ fn print_summary(records: &[PageRecord], total_time_secs: f64) {
 
     println!();
     println!("========== CRAWL SUMMARY ==========");
-    println!("  Pages crawled     : {}", total);
+    println!("  Pages crawled     : {}", records.len());
     println!("  Successful        : {}", successful.len());
     println!("  Broken links      : {}", broken.len());
     println!("  Avg response time : {} ms", avg_response_ms);
@@ -127,7 +184,12 @@ fn print_summary(records: &[PageRecord], total_time_secs: f64) {
     println!("===================================");
 }
 
-async fn crawl(start_url: &str, max_depth: u32, max_pages: u32, workers: usize) -> Vec<PageRecord> {
+async fn crawl(
+    start_url: &str,
+    max_depth: u32,
+    max_pages: u32,
+    workers: usize,
+) -> (Vec<PageRecord>, Vec<LinkEdge>) {
     let client = reqwest::Client::builder()
         .user_agent("RustCrawler/0.1")
         .timeout(std::time::Duration::from_secs(10))
@@ -136,15 +198,19 @@ async fn crawl(start_url: &str, max_depth: u32, max_pages: u32, workers: usize) 
 
     let visited: Arc<Mutex<HashSet<String>>> = Arc::new(Mutex::new(HashSet::new()));
     let pages_crawled: Arc<Mutex<u32>> = Arc::new(Mutex::new(0));
-
-    // All page records collected here
     let records: Arc<Mutex<Vec<PageRecord>>> = Arc::new(Mutex::new(Vec::new()));
+
+    // Collect all edges (from → to) across the entire crawl
+    let edges: Arc<Mutex<Vec<LinkEdge>>> = Arc::new(Mutex::new(Vec::new()));
 
     let mut current_frontier = vec![start_url.to_string()];
     visited.lock().await.insert(start_url.to_string());
 
     println!("Starting crawl from: {}", start_url);
-    println!("Max depth: {}  |  Max pages: {}  |  Workers: {}", max_depth, max_pages, workers);
+    println!(
+        "Max depth: {}  |  Max pages: {}  |  Workers: {}",
+        max_depth, max_pages, workers
+    );
     println!("{}", "-".repeat(60));
 
     for depth in 0..=max_depth {
@@ -156,83 +222,101 @@ async fn crawl(start_url: &str, max_depth: u32, max_pages: u32, workers: usize) 
             break;
         }
 
-        println!("\n[Depth {}] Fetching {} URLs...", depth, current_frontier.len());
+        println!(
+            "\n[Depth {}] Fetching {} URLs...",
+            depth,
+            current_frontier.len()
+        );
 
         let next_frontier: Arc<Mutex<Vec<String>>> = Arc::new(Mutex::new(Vec::new()));
 
         for chunk in current_frontier.chunks(workers) {
-            let tasks: Vec<_> = chunk.iter().map(|url| {
-                let client = client.clone();
-                let url = url.clone();
-                let visited = Arc::clone(&visited);
-                let next_frontier = Arc::clone(&next_frontier);
-                let pages_crawled = Arc::clone(&pages_crawled);
-                let records = Arc::clone(&records);
+            let tasks: Vec<_> = chunk
+                .iter()
+                .map(|url| {
+                    let client = client.clone();
+                    let url = url.clone();
+                    let visited = Arc::clone(&visited);
+                    let next_frontier = Arc::clone(&next_frontier);
+                    let pages_crawled = Arc::clone(&pages_crawled);
+                    let records = Arc::clone(&records);
+                    let edges = Arc::clone(&edges);
 
-                tokio::spawn(async move {
-                    if *pages_crawled.lock().await >= max_pages {
-                        return;
-                    }
+                    tokio::spawn(async move {
+                        if *pages_crawled.lock().await >= max_pages {
+                            return;
+                        }
 
-                    match fetch_page(&client, &url).await {
-                        Ok((body, status, elapsed_ms)) => {
-                            *pages_crawled.lock().await += 1;
+                        match fetch_page(&client, &url).await {
+                            Ok((body, status, elapsed_ms)) => {
+                                *pages_crawled.lock().await += 1;
 
-                            let links = if depth < max_depth {
-                                extract_links(&body, &url)
-                            } else {
-                                vec![]
-                            };
+                                let links = if depth < max_depth {
+                                    extract_links(&body, &url)
+                                } else {
+                                    vec![]
+                                };
 
-                            let links_found = links.len();
+                                let links_found = links.len();
 
-                            println!("  [{}] {} ({}ms, {} links)", status, url, elapsed_ms, links_found);
+                                println!(
+                                    "  [{}] {} ({}ms, {} links)",
+                                    status, url, elapsed_ms, links_found
+                                );
 
-                            // Store this page's record
-                            records.lock().await.push(PageRecord {
-                                url: url.clone(),
-                                status,
-                                depth,
-                                links_found,
-                                response_time_ms: elapsed_ms,
-                            });
+                                records.lock().await.push(PageRecord {
+                                    url: url.clone(),
+                                    status,
+                                    depth,
+                                    links_found,
+                                    response_time_ms: elapsed_ms,
+                                });
 
-                            if depth < max_depth {
-                                let mut visited = visited.lock().await;
-                                let mut next = next_frontier.lock().await;
-                                for link in links {
-                                    if !visited.contains(&link) {
-                                        visited.insert(link.clone());
-                                        next.push(link);
+                                if depth < max_depth {
+                                    let mut visited = visited.lock().await;
+                                    let mut next = next_frontier.lock().await;
+                                    let mut edges = edges.lock().await;
+
+                                    for link in links {
+                                        // Record this edge regardless of visited status
+                                        edges.push(LinkEdge {
+                                            from: url.clone(),
+                                            to: link.clone(),
+                                        });
+
+                                        if !visited.contains(&link) {
+                                            visited.insert(link.clone());
+                                            next.push(link);
+                                        }
                                     }
                                 }
                             }
+                            Err(e) => {
+                                println!("  [ERROR] {} — {}", url, e);
+                                records.lock().await.push(PageRecord {
+                                    url: url.clone(),
+                                    status: "ERROR".to_string(),
+                                    depth,
+                                    links_found: 0,
+                                    response_time_ms: 0,
+                                });
+                            }
                         }
-                        Err(e) => {
-                            println!("  [ERROR] {} — {}", url, e);
-                            records.lock().await.push(PageRecord {
-                                url: url.clone(),
-                                status: "ERROR".to_string(),
-                                depth,
-                                links_found: 0,
-                                response_time_ms: 0,
-                            });
-                        }
-                    }
+                    })
                 })
-            }).collect();
+                .collect();
 
             join_all(tasks).await;
         }
 
-        current_frontier = Arc::try_unwrap(next_frontier)
-            .unwrap()
-            .into_inner();
+        current_frontier = Arc::try_unwrap(next_frontier).unwrap().into_inner();
     }
 
     println!("\n{}", "-".repeat(60));
 
-    Arc::try_unwrap(records).unwrap().into_inner()
+    let records = Arc::try_unwrap(records).unwrap().into_inner();
+    let edges = Arc::try_unwrap(edges).unwrap().into_inner();
+    (records, edges)
 }
 
 #[tokio::main]
@@ -245,14 +329,21 @@ async fn main() {
     println!("  Max pages : {}", args.max_pages);
     println!("  Workers   : {}", args.workers);
     println!("  Output    : {}", args.output);
+    println!("  Graph     : {}", args.graph);
     println!();
 
     let start = Instant::now();
-    let records = crawl(&args.url, args.depth, args.max_pages, args.workers).await;
+    let (records, edges) = crawl(&args.url, args.depth, args.max_pages, args.workers).await;
     let total_time = start.elapsed().as_secs_f64();
 
     print_summary(&records, total_time);
 
     println!("\nExporting CSV...");
     export_csv(&records, &args.output);
+
+    println!("\nBuilding graph...");
+    let graph = build_graph(&edges);
+    println!("  Nodes : {}", graph.node_count());
+    println!("  Edges : {}", graph.edge_count());
+    export_graph(&graph, &args.graph);
 }
