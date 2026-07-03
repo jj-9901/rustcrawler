@@ -129,3 +129,57 @@ fn shorten(url: &str, max: usize) -> String {
         format!("{}...", &url[..max])
     }
 }
+
+pub fn compute_pagerank(
+    records: &[PageRecord],
+    edges: &[LinkEdge],
+    iterations: u32,
+    damping: f64,
+) -> std::collections::HashMap<String, f64> {
+    let n = records.len();
+    if n == 0 {
+        return std::collections::HashMap::new();
+    }
+
+    let urls: Vec<String> = records.iter().map(|r| r.url.clone()).collect();
+    let url_index: std::collections::HashMap<String, usize> = urls
+        .iter()
+        .enumerate()
+        .map(|(i, u)| (u.clone(), i))
+        .collect();
+
+    // outbound link count per page
+    let mut out_degree = vec![0usize; n];
+    // inbound links: who links to page i
+    let mut inbound: Vec<Vec<usize>> = vec![vec![]; n];
+
+    for edge in edges {
+        if let (Some(&fi), Some(&ti)) =
+            (url_index.get(&edge.from), url_index.get(&edge.to))
+        {
+            if fi != ti {
+                out_degree[fi] += 1;
+                inbound[ti].push(fi);
+            }
+        }
+    }
+
+    let mut rank = vec![1.0 / n as f64; n];
+
+    for _ in 0..iterations {
+        let mut new_rank = vec![(1.0 - damping) / n as f64; n];
+        for i in 0..n {
+            for &from in &inbound[i] {
+                if out_degree[from] > 0 {
+                    new_rank[i] += damping * rank[from] / out_degree[from] as f64;
+                }
+            }
+        }
+        rank = new_rank;
+    }
+
+    urls.into_iter()
+        .enumerate()
+        .map(|(i, url)| (url, rank[i]))
+        .collect()
+}

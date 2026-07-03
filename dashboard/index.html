@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RustCrawler Report</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="tooltip"></div>
+
+<header>
+  <div>
+    <h1>🕷 RustCrawler</h1>
+    <p>Crawled: <strong id="crawl-url">__CRAWL_URL__</strong> &nbsp;|&nbsp; <span id="crawl-time">__CRAWL_TIME__</span></p>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- Stat Cards -->
+  <div class="cards">
+    <div class="card">
+      <div class="value" id="stat-total">—</div>
+      <div class="label">Pages Crawled</div>
+    </div>
+    <div class="card green">
+      <div class="value" id="stat-success">—</div>
+      <div class="label">Successful</div>
+    </div>
+    <div class="card red">
+      <div class="value" id="stat-broken">—</div>
+      <div class="label">Broken Links</div>
+    </div>
+    <div class="card yellow">
+      <div class="value" id="stat-avgms">—</div>
+      <div class="label">Avg Response</div>
+    </div>
+    <div class="card">
+      <div class="value" id="stat-edges">—</div>
+      <div class="label">Total Links</div>
+    </div>
+    <div class="card">
+      <div class="value" id="stat-nodes">—</div>
+      <div class="label">Unique URLs</div>
+    </div>
+    <div class="card purple">
+      <div class="value" id="stat-time">—</div>
+      <div class="label">Crawl Time</div>
+    </div>
+    <div class="card" id="card-health">
+      <div class="value" id="stat-health">—</div>
+      <div class="label">Health Score</div>
+    </div>
+  </div>
+
+  <!-- Graph -->
+  <div class="section">
+    <h2>Link Graph</h2>
+    <div id="graph-container">
+      <svg id="graph-svg"></svg>
+      <div class="graph-controls">
+        <button id="btn-zoom-in">＋ Zoom In</button>
+        <button id="btn-zoom-out">－ Zoom Out</button>
+        <button id="btn-reset">⟳ Reset</button>
+      </div>
+      <div class="graph-hint">scroll to zoom · drag to pan · hover to highlight · click to open</div>
+      <div class="graph-legend">
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#e06c75"></div> Start
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#c678dd"></div> Hub (3+ inbound)
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot" style="background:#61afef"></div> Page
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Analytics -->
+  <div class="section">
+    <h2>Analytics</h2>
+    <div class="analytics-grid">
+
+      <div class="analytics-card">
+        <h3>Website Health</h3>
+        <div class="health-score">
+          <div class="score-circle" id="health-circle">—</div>
+          <div class="health-items" id="health-items"></div>
+        </div>
+      </div>
+
+      <div class="analytics-card">
+        <h3>Link Types</h3>
+        <div class="link-stat">
+          <span class="name">Internal Links</span>
+          <span class="num" style="color:#98c379" id="stat-internal">—</span>
+        </div>
+        <div class="link-stat">
+          <span class="name">External Links</span>
+          <span class="num" style="color:#e06c75" id="stat-external">—</span>
+        </div>
+        <div class="link-stat">
+          <span class="name">Total Edges</span>
+          <span class="num" id="stat-total-edges">—</span>
+        </div>
+      </div>
+
+      <div class="analytics-card">
+        <h3>Response Times</h3>
+        <div id="response-bars"></div>
+      </div>
+
+      <div class="analytics-card">
+        <h3>External Domains</h3>
+        <div id="external-domains"></div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- PageRank -->
+  <div class="section">
+    <h2>Top Pages by PageRank</h2>
+    <div class="analytics-card">
+      <div id="pagerank-list"></div>
+    </div>
+  </div>
+
+  <!-- Pages Table -->
+  <div class="section">
+    <h2>All Pages</h2>
+    <div class="search-bar">
+      <input id="table-search" type="text" placeholder="Search URLs...">
+    </div>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>URL</th>
+            <th>Status</th>
+            <th>Depth</th>
+            <th>Response Time</th>
+            <th>Links Found</th>
+            <th>PageRank</th>
+          </tr>
+        </thead>
+        <tbody id="pages-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+
+<!-- Data injected by Rust -->
+__CRAWL_DATA__
+
+<script src="graph.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
