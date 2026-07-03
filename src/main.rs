@@ -1,5 +1,6 @@
 mod analytics;
 mod crawler;
+mod dashboard;
 mod exporter;
 mod fetcher;
 mod graph;
@@ -80,4 +81,13 @@ async fn main() {
     println!("  Nodes : {}", g.node_count());
     println!("  Edges : {}", g.edge_count());
     graph::export_graph(&g, &args.graph);
+
+    println!("\nGenerating HTML report...");
+    dashboard::generate_report(
+        &records,
+        &edges,
+        &args.url,
+        total_time,
+        "report.html",
+    );
 }
