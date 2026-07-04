@@ -42,3 +42,15 @@ pub fn extract_links(html: &str, base_url: &str) -> Vec<String> {
 
     links
 }
+
+pub fn extract_title(html: &str) -> String {
+    let document = Html::parse_document(html);
+    let selector = Selector::parse("title").unwrap();
+
+    document
+        .select(&selector)
+        .next()
+        .map(|el| el.text().collect::<String>().trim().to_string())
+        .filter(|t| !t.is_empty())
+        .unwrap_or_else(|| "No title".to_string())
+}

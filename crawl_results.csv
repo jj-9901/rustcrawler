@@ -1,22 +1,41 @@
-url,status,depth,links_found,response_time_ms
-https://books.toscrape.com,200 OK,0,94,1106
-https://books.toscrape.com/index.html,200 OK,1,94,224
-https://books.toscrape.com/catalogue/category/books_1/index.html,200 OK,1,94,483
-https://books.toscrape.com/catalogue/category/books/travel_2/index.html,200 OK,1,76,888
-https://books.toscrape.com/catalogue/category/books/mystery_3/index.html,200 OK,1,95,1054
-https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html,200 OK,1,95,1073
-https://books.toscrape.com/catalogue/category/books/romance_8/index.html,200 OK,1,95,210
-https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html,200 OK,1,95,211
-https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html,200 OK,1,88,240
-https://books.toscrape.com/catalogue/category/books/classics_6/index.html,200 OK,1,92,240
-https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html,200 OK,1,76,460
-https://books.toscrape.com/catalogue/category/books/religion_12/index.html,200 OK,1,68,210
-https://books.toscrape.com/catalogue/category/books/music_14/index.html,200 OK,1,80,221
-https://books.toscrape.com/catalogue/category/books/childrens_11/index.html,200 OK,1,95,222
-https://books.toscrape.com/catalogue/category/books/fiction_10/index.html,200 OK,1,95,441
-https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html,200 OK,1,95,440
-https://books.toscrape.com/catalogue/category/books/default_15/index.html,200 OK,1,95,212
-https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html,200 OK,1,95,221
-https://books.toscrape.com/catalogue/category/books/sports-and-games_17/index.html,200 OK,1,64,239
-https://books.toscrape.com/catalogue/category/books/science-fiction_16/index.html,200 OK,1,86,251
-https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html,200 OK,1,95,418
+url,status,depth,links_found,response_time_ms,title,size_bytes
+https://books.toscrape.com,200 OK,0,94,1340,All products | Books to Scrape - Sandbox,51294
+https://books.toscrape.com/index.html,200 OK,1,94,205,All products | Books to Scrape - Sandbox,51294
+https://books.toscrape.com/catalogue/category/books_1/index.html,200 OK,1,94,440,"Books | 
+     Books to Scrape - Sandbox",50607
+https://books.toscrape.com/catalogue/category/books/travel_2/index.html,200 OK,1,76,819,"Travel | 
+     Books to Scrape - Sandbox",37009
+https://books.toscrape.com/catalogue/category/books/mystery_3/index.html,200 OK,1,95,1013,"Mystery | 
+     Books to Scrape - Sandbox",50388
+https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html,200 OK,1,95,1009,"Historical Fiction | 
+     Books to Scrape - Sandbox",50109
+https://books.toscrape.com/catalogue/category/books/classics_6/index.html,200 OK,1,92,197,"Classics | 
+     Books to Scrape - Sandbox",47874
+https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html,200 OK,1,95,198,"Sequential Art | 
+     Books to Scrape - Sandbox",51455
+https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html,200 OK,1,88,254,"Womens Fiction | 
+     Books to Scrape - Sandbox",45308
+https://books.toscrape.com/catalogue/category/books/romance_8/index.html,200 OK,1,95,404,"Romance | 
+     Books to Scrape - Sandbox",50397
+https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html,200 OK,1,76,468,"Philosophy | 
+     Books to Scrape - Sandbox",37032
+https://books.toscrape.com/catalogue/category/books/religion_12/index.html,200 OK,1,68,197,"Religion | 
+     Books to Scrape - Sandbox",30933
+https://books.toscrape.com/catalogue/category/books/music_14/index.html,200 OK,1,80,197,"Music | 
+     Books to Scrape - Sandbox",40193
+https://books.toscrape.com/catalogue/category/books/childrens_11/index.html,200 OK,1,95,237,"Childrens | 
+     Books to Scrape - Sandbox",49864
+https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html,200 OK,1,95,394,"Nonfiction | 
+     Books to Scrape - Sandbox",52725
+https://books.toscrape.com/catalogue/category/books/fiction_10/index.html,200 OK,1,95,433,"Fiction | 
+     Books to Scrape - Sandbox",49677
+https://books.toscrape.com/catalogue/category/books/sports-and-games_17/index.html,200 OK,1,64,203,"Sports and Games | 
+     Books to Scrape - Sandbox",27558
+https://books.toscrape.com/catalogue/category/books/science-fiction_16/index.html,200 OK,1,86,198,"Science Fiction | 
+     Books to Scrape - Sandbox",44447
+https://books.toscrape.com/catalogue/category/books/default_15/index.html,200 OK,1,95,232,"Default | 
+     Books to Scrape - Sandbox",51474
+https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html,200 OK,1,95,391,"Fantasy | 
+     Books to Scrape - Sandbox",51248
+https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html,200 OK,1,95,393,"Add a comment | 
+     Books to Scrape - Sandbox",50931

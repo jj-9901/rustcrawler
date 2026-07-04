@@ -1,6 +1,6 @@
 use crate::fetcher::fetch_page;
 use crate::models::{LinkEdge, PageRecord};
-use crate::parser::extract_links;
+use crate::parser::{extract_links, extract_title};
 use futures::future::join_all;
 use std::collections::HashSet;
 use std::sync::Arc;
@@ -71,6 +71,8 @@ pub async fn crawl(
                             };
 
                             let links_found = links.len();
+                            let title = extract_title(&body);
+                            let size_bytes = body.len();
 
                             println!(
                                 "  [{}] {} ({}ms, {} links)",
@@ -83,6 +85,8 @@ pub async fn crawl(
                                 depth,
                                 links_found,
                                 response_time_ms: elapsed_ms,
+                                title,
+                                size_bytes, 
                             });
 
                             if depth < max_depth {
@@ -110,6 +114,8 @@ pub async fn crawl(
                                 depth,
                                 links_found: 0,
                                 response_time_ms: 0,
+                                title: "Error".to_string(),
+                                size_bytes: 0, 
                             });
                         }
                     }

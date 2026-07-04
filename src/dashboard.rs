@@ -92,8 +92,9 @@ pub fn generate_report(
     let pages_json: String = records.iter().map(|r| {
         let pr = pagerank.get(&r.url).copied().unwrap_or(0.0);
         format!(
-            r#"{{"url":"{}","status":"{}","depth":{},"response_time_ms":{},"links_found":{},"pagerank":{:.4}}}"#,
-            escape_json(&r.url), r.status, r.depth, r.response_time_ms, r.links_found, pr
+            r#"{{"url":"{}","status":"{}","depth":{},"response_time_ms":{},"links_found":{},"pagerank":{:.4},"title":"{}","size_bytes":{}}}"#,
+            escape_json(&r.url), r.status, r.depth, r.response_time_ms,
+            r.links_found, pr, escape_json(&r.title), r.size_bytes
         )
     }).collect::<Vec<_>>().join(",");
 

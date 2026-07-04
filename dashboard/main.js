@@ -1,3 +1,10 @@
+function formatBytes(bytes) {
+    if (bytes === 0) return '0 B';
+    if (bytes < 1024) return bytes + ' B';
+    if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+    return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+}
+
 // Render stat cards
 function renderCards(stats) {
   document.getElementById('stat-total').textContent    = stats.total_pages;
@@ -20,16 +27,19 @@ function renderTable(pages) {
   const tbody = document.getElementById('pages-tbody');
 
   function draw(filtered) {
-    tbody.innerHTML = filtered.map(r => `
-      <tr>
-        <td class="url-cell"><a href="${r.url}" target="_blank">${r.url}</a></td>
-        <td class="${r.status === 'ERROR' ? 'status-error' : 'status-ok'}">${r.status}</td>
-        <td>${r.depth}</td>
-        <td>${r.response_time_ms}ms</td>
-        <td>${r.links_found}</td>
-        <td>${(r.pagerank || 0).toFixed(4)}</td>
-      </tr>
-    `).join('');
+      tbody.innerHTML = filtered.map(r => `
+        <tr>
+          <td class="url-cell"><a href="${r.url}" target="_blank">${r.url}</a></td>
+          <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#abb2bf"
+              title="${r.title}">${r.title}</td>
+          <td class="${r.status === 'ERROR' ? 'status-error' : 'status-ok'}">${r.status}</td>
+          <td>${r.depth}</td>
+          <td>${r.response_time_ms}ms</td>
+          <td>${formatBytes(r.size_bytes)}</td>
+          <td>${r.links_found}</td>
+          <td>${(r.pagerank || 0).toFixed(4)}</td>
+        </tr>
+      `).join('');
   }
 
   draw(pages);

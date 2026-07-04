@@ -7,6 +7,8 @@ pub struct PageRecord {
     pub depth: u32,
     pub links_found: usize,
     pub response_time_ms: u128,
+    pub title: String,
+    pub size_bytes: usize,
 }
 
 #[derive(Debug, Clone, Serialize)]
