@@ -69,11 +69,21 @@ pub fn generate_report(
     let nodes_json: String = {
         let mut v: Vec<_> = node_set.iter().collect();
         v.sort_by_key(|(_, id)| *id);
+
+        // Build a depth map from records
+        let depth_map: HashMap<&str, u32> = records
+            .iter()
+            .map(|r| (r.url.as_str(), r.depth))
+            .collect();
+
         v.iter().map(|(url, id)| {
             let short = shorten_url(url, 40);
             let pr = pagerank.get(*url).copied().unwrap_or(0.0);
-            format!(r#"{{"id":{},"label":"{}","url":"{}","pagerank":{:.4}}}"#,
-                id, escape_json(&short), escape_json(url), pr)
+            let depth = depth_map.get(url.as_str()).copied().unwrap_or(99);
+            format!(
+                r#"{{"id":{},"label":"{}","url":"{}","pagerank":{:.4},"depth":{}}}"#,
+                id, escape_json(&short), escape_json(url), pr, depth
+            )
         }).collect::<Vec<_>>().join(",")
     };
 
@@ -98,26 +108,34 @@ pub fn generate_report(
         )
     }).collect::<Vec<_>>().join(",");
 
-    // ── Stats JSON ────────────────────────────────────────────
+    // ── Graph analytics ───────────────────────────────────────
+    let dead_ends = crate::analytics::find_dead_ends(records, edges);
+    let density   = crate::analytics::compute_density(records.len(), edges.len());
+    let components = crate::analytics::count_connected_components(records, edges);
+
     let stats_json = format!(
         r#"{{
-  "total_pages": {},
-  "successful": {},
-  "broken_links": {},
-  "avg_response_ms": {},
-  "total_edges": {},
-  "unique_nodes": {},
-  "crawl_time_secs": {:.2},
-  "internal_links": {},
-  "external_links": {},
-  "health_score": {},
-  "health_issues": [{}],
-  "external_domains": [{}]
-}}"#,
+    "total_pages": {},
+    "successful": {},
+    "broken_links": {},
+    "avg_response_ms": {},
+    "total_edges": {},
+    "unique_nodes": {},
+    "crawl_time_secs": {:.2},
+    "internal_links": {},
+    "external_links": {},
+    "health_score": {},
+    "health_issues": [{}],
+    "external_domains": [{}],
+    "dead_ends": {},
+    "graph_density": {:.4},
+    "connected_components": {}
+    }}"#,
         records.len(), successful, broken, avg_ms,
         edges.len(), node_set.len(), total_time_secs,
         internal, external, health_score,
-        health_issues_json, ext_domains_json
+        health_issues_json, ext_domains_json,
+        dead_ends.len(), density, components
     );
 
     // ── Data script block ─────────────────────────────────────

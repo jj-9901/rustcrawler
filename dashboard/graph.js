@@ -167,6 +167,7 @@ function renderGraph(nodesData, edgesData) {
       window.open(d.url, '_blank');
     });
 
+
   // Tick — curved paths
   simulation.on('tick', () => {
     link.attr('d', d => {

@@ -54,6 +54,18 @@
       <div class="value" id="stat-health">—</div>
       <div class="label">Health Score</div>
     </div>
+    <div class="card">
+      <div class="value" id="stat-deadends">—</div>
+      <div class="label">Dead-end Pages</div>
+    </div>
+    <div class="card">
+      <div class="value" id="stat-density">—</div>
+      <div class="label">Graph Density</div>
+    </div>
+    <div class="card">
+      <div class="value" id="stat-components">—</div>
+      <div class="label">Components</div>
+    </div>
   </div>
 
   <!-- Graph -->
@@ -65,6 +77,7 @@
         <button id="btn-zoom-in">＋ Zoom In</button>
         <button id="btn-zoom-out">－ Zoom Out</button>
         <button id="btn-reset">⟳ Reset</button>
+        <button id="btn-color-depth">🎨 Color by Depth</button>
       </div>
       <div class="graph-hint">scroll to zoom · drag to pan · hover to highlight · click to open</div>
       <div class="graph-legend">
@@ -76,6 +89,9 @@
         </div>
         <div class="legend-item">
           <div class="legend-dot" style="background:#61afef"></div> Page
+        </div>
+        <div class="legend-item" id="legend-depth" style="display:none">
+          <div class="legend-dot" style="background:#98c379"></div> Depth 0→N
         </div>
       </div>
     </div>

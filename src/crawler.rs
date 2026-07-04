@@ -37,15 +37,24 @@ pub async fn crawl(
         if current_frontier.is_empty() {
             break;
         }
-        if *pages_crawled.lock().await >= max_pages {
-            break;
-        }
 
-        println!("\n[Depth {}] Fetching {} URLs...", depth, current_frontier.len());
+        // Reserve slots evenly across remaining depths
+        let remaining_depths = max_depth - depth + 1;
+        let crawled_so_far = *pages_crawled.lock().await;
+        let remaining_pages = (max_pages as usize).saturating_sub(crawled_so_far as usize);
+        let slots_this_depth = (remaining_pages / remaining_depths as usize).max(1);
+
+        let frontier_slice = if current_frontier.len() > slots_this_depth {
+            current_frontier[..slots_this_depth].to_vec()
+        } else {
+            current_frontier.clone()
+        };
+
+        println!("\n[Depth {}] Fetching {} URLs...", depth, frontier_slice.len());
 
         let next_frontier: Arc<Mutex<Vec<String>>> = Arc::new(Mutex::new(Vec::new()));
 
-        for chunk in current_frontier.chunks(workers) {
+        for chunk in frontier_slice.chunks(workers) {
             let tasks: Vec<_> = chunk.iter().map(|url| {
                 let client = client.clone();
                 let url = url.clone();
@@ -56,10 +65,6 @@ pub async fn crawl(
                 let edges = Arc::clone(&edges);
 
                 tokio::spawn(async move {
-                    if *pages_crawled.lock().await >= max_pages {
-                        return;
-                    }
-
                     match fetch_page(&client, &url).await {
                         Ok((body, status, elapsed_ms)) => {
                             *pages_crawled.lock().await += 1;
@@ -75,8 +80,8 @@ pub async fn crawl(
                             let size_bytes = body.len();
 
                             println!(
-                                "  [{}] {} ({}ms, {} links)",
-                                status, url, elapsed_ms, links_found
+                                "  [{}] {} ({}ms, {} links, {})",
+                                status, url, elapsed_ms, links_found, title
                             );
 
                             records.lock().await.push(PageRecord {
@@ -86,7 +91,7 @@ pub async fn crawl(
                                 links_found,
                                 response_time_ms: elapsed_ms,
                                 title,
-                                size_bytes, 
+                                size_bytes,
                             });
 
                             if depth < max_depth {
@@ -115,7 +120,7 @@ pub async fn crawl(
                                 links_found: 0,
                                 response_time_ms: 0,
                                 title: "Error".to_string(),
-                                size_bytes: 0, 
+                                size_bytes: 0,
                             });
                         }
                     }

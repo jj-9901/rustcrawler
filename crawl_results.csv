@@ -1,41 +1,101 @@
 url,status,depth,links_found,response_time_ms,title,size_bytes
-https://books.toscrape.com,200 OK,0,94,1340,All products | Books to Scrape - Sandbox,51294
-https://books.toscrape.com/index.html,200 OK,1,94,205,All products | Books to Scrape - Sandbox,51294
-https://books.toscrape.com/catalogue/category/books_1/index.html,200 OK,1,94,440,"Books | 
-     Books to Scrape - Sandbox",50607
-https://books.toscrape.com/catalogue/category/books/travel_2/index.html,200 OK,1,76,819,"Travel | 
-     Books to Scrape - Sandbox",37009
-https://books.toscrape.com/catalogue/category/books/mystery_3/index.html,200 OK,1,95,1013,"Mystery | 
-     Books to Scrape - Sandbox",50388
-https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html,200 OK,1,95,1009,"Historical Fiction | 
-     Books to Scrape - Sandbox",50109
-https://books.toscrape.com/catalogue/category/books/classics_6/index.html,200 OK,1,92,197,"Classics | 
-     Books to Scrape - Sandbox",47874
-https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html,200 OK,1,95,198,"Sequential Art | 
-     Books to Scrape - Sandbox",51455
-https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html,200 OK,1,88,254,"Womens Fiction | 
-     Books to Scrape - Sandbox",45308
-https://books.toscrape.com/catalogue/category/books/romance_8/index.html,200 OK,1,95,404,"Romance | 
-     Books to Scrape - Sandbox",50397
-https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html,200 OK,1,76,468,"Philosophy | 
-     Books to Scrape - Sandbox",37032
-https://books.toscrape.com/catalogue/category/books/religion_12/index.html,200 OK,1,68,197,"Religion | 
-     Books to Scrape - Sandbox",30933
-https://books.toscrape.com/catalogue/category/books/music_14/index.html,200 OK,1,80,197,"Music | 
-     Books to Scrape - Sandbox",40193
-https://books.toscrape.com/catalogue/category/books/childrens_11/index.html,200 OK,1,95,237,"Childrens | 
-     Books to Scrape - Sandbox",49864
-https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html,200 OK,1,95,394,"Nonfiction | 
-     Books to Scrape - Sandbox",52725
-https://books.toscrape.com/catalogue/category/books/fiction_10/index.html,200 OK,1,95,433,"Fiction | 
-     Books to Scrape - Sandbox",49677
-https://books.toscrape.com/catalogue/category/books/sports-and-games_17/index.html,200 OK,1,64,203,"Sports and Games | 
-     Books to Scrape - Sandbox",27558
-https://books.toscrape.com/catalogue/category/books/science-fiction_16/index.html,200 OK,1,86,198,"Science Fiction | 
-     Books to Scrape - Sandbox",44447
-https://books.toscrape.com/catalogue/category/books/default_15/index.html,200 OK,1,95,232,"Default | 
-     Books to Scrape - Sandbox",51474
-https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html,200 OK,1,95,391,"Fantasy | 
-     Books to Scrape - Sandbox",51248
-https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html,200 OK,1,95,393,"Add a comment | 
-     Books to Scrape - Sandbox",50931
+https://wikipedia.org,200 OK,0,374,582,Wikipedia,120361
+https://pl.wikipedia.org/,200 OK,1,282,371,"Wikipedia, wolna encyklopedia",133025
+https://it.wikipedia.org/,200 OK,1,468,511,"Wikipedia, l'enciclopedia libera",186854
+https://zh.wikipedia.org/,200 OK,1,631,412,维基百科，自由的百科全书,241273
+https://de.wikipedia.org/,200 OK,1,243,686,Wikipedia – Die freie Enzyklopädie,125057
+https://fr.wikipedia.org/,200 OK,1,632,694,"Wikipédia, l'encyclopédie libre",242024
+https://ru.wikipedia.org/,200 OK,1,355,806,Википедия — свободная энциклопедия,209152
+https://ja.wikipedia.org/,200 OK,1,395,1097,Wikipedia,150885
+https://es.wikipedia.org/,200 OK,1,361,1183,"Wikipedia, la enciclopedia libre",151100
+https://pt.wikipedia.org/,200 OK,1,658,1450,"Wikipédia, a enciclopédia livre",252781
+https://en.wikipedia.org/,200 OK,1,648,1504,"Wikipedia, the free encyclopedia",249734
+https://ceb.wikipedia.org/,200 OK,1,215,401,Wikipedia,96103
+https://af.wikipedia.org/,200 OK,1,540,396,Wikipedia,185301
+https://war.wikipedia.org/,200 OK,1,634,500,Wikipedia,220176
+https://nl.wikipedia.org/,200 OK,1,568,614,"Wikipedia, de vrije encyclopedie",234260
+https://ar.wikipedia.org/,200 OK,1,452,826,ويكيبيديا، الموسوعة الحرة,205028
+https://fa.wikipedia.org/,200 OK,1,499,1013,ویکی‌پدیا، دانشنامهٔ آزاد,193293
+https://vi.wikipedia.org/,200 OK,1,364,1245,"Wikipedia, bách khoa toàn thư mở",181510
+https://uk.wikipedia.org/,200 OK,1,375,1335,Вікіпедія,181278
+https://arz.wikipedia.org/,200 OK,1,636,1512,ويكيبيديا,296092
+https://sv.wikipedia.org/,200 OK,1,640,1573,"Wikipedia, den fria encyklopedin",241775
+https://az.wikipedia.org/,200 OK,1,261,375,"Vikipediya, azad ensiklopediya",138835
+https://ast.wikipedia.org/,200 OK,1,395,497,Wikipedia,151766
+https://sq.wikipedia.org/,200 OK,1,577,423,Wikipedia,239870
+https://bg.wikipedia.org/,200 OK,1,617,671,Уикипедия,264090
+https://pl.wikipedia.org/wiki/Wikipedia:Strona_g%C5%82%C3%B3wna,200 OK,2,282,88,"Wikipedia, wolna encyklopedia",133025
+https://pl.wikipedia.org/wiki/Wikipedia:Kontakt_z_wikipedystami,200 OK,2,184,330,"Wikipedia:Kontakt z wikipedystami – Wikipedia, wolna encyklopedia",98316
+https://pl.wikipedia.org/wiki/Wikipedia:Tablica_og%C5%82osze%C5%84,200 OK,2,613,322,"Wikipedia:Tablica ogłoszeń – Wikipedia, wolna encyklopedia",170668
+https://pl.wikipedia.org/wiki/Wikipedia:Wyr%C3%B3%C5%BCniona_zawarto%C5%9B%C4%87_Wikipedii,200 OK,2,136,441,"Wikipedia:Wyróżniona zawartość Wikipedii – Wikipedia, wolna encyklopedia",85730
+https://pl.wikipedia.org/wiki/Pomoc:FAQ,200 OK,2,275,494,"Pomoc:FAQ – Wikipedia, wolna encyklopedia",158996
+https://pl.wikipedia.org/wiki/Portal:Kategorie_G%C5%82%C3%B3wne,200 OK,2,373,539,"Wikipedia:Kategorie Główne – Wikipedia, wolna encyklopedia",158864
+https://pl.wikipedia.org/wiki/Pomoc:Pierwsze_kroki,200 OK,2,117,677,"Pomoc:Pierwsze kroki – Wikipedia, wolna encyklopedia",88193
+https://pl.wikipedia.org/wiki/Wikipedia:O_Wikipedii,200 OK,2,256,705,"Wikipedia:O Wikipedii – Wikipedia, wolna encyklopedia",141086
+https://pl.wikipedia.org/wiki/Specjalna:Losowa_strona,200 OK,2,230,1414,"Gubernatorzy i gubernatorzy generalni Malty – Wikipedia, wolna encyklopedia",97480
+https://pl.wikipedia.org/wiki/Wikipedia:Portal_wikipedyst%C3%B3w,200 OK,2,825,2232,"Wikipedia:Portal wikipedystów – Wikipedia, wolna encyklopedia",352105
+https://pl.wikipedia.org/wiki/Wikipedia:Zasady,200 OK,2,278,66,"Wikipedia:Zasady – Wikipedia, wolna encyklopedia",145693
+https://pl.wikipedia.org/wiki/Pomoc:Spis_tre%C5%9Bci,200 OK,2,353,96,"Pomoc:Spis treści – Wikipedia, wolna encyklopedia",172586
+https://ar.wikipedia.org/wiki/,200 OK,2,452,391,ويكيبيديا، الموسوعة الحرة,205028
+https://pl.wikipedia.org/wiki/Specjalna:Szukaj,200 OK,2,41,576,"Szukaj – Wikipedia, wolna encyklopedia",56881
+https://be-tarask.wikipedia.org/wiki/,200 OK,2,253,660,Вікіпэдыя,133101
+https://pl.wikipedia.org/wiki/Specjalna:Strony_specjalne,200 OK,2,201,723,"Strony specjalne – Wikipedia, wolna encyklopedia",86308
+https://pl.wikipedia.org/wiki/Specjalna:Ostatnie_zmiany,200 OK,2,478,1238,"Ostatnie zmiany – Wikipedia, wolna encyklopedia",229227
+https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=pl.wikipedia.org&uselang=pl,200 OK,2,22,1461,Przekaż darowiznę – Donate,58123
+https://pl.wikipedia.org/w/index.php?title=Specjalna:Utw%C3%B3rz_konto&returnto=Wikipedia%3AStrona+g%C5%82%C3%B3wna,200 OK,2,49,1991,"Załóż nowe konto – Wikipedia, wolna encyklopedia",46539
+https://pl.wikipedia.org/w/index.php?title=Specjalna:Zaloguj&returnto=Wikipedia%3AStrona+g%C5%82%C3%B3wna,200 OK,2,47,2131,"Zaloguj się – Wikipedia, wolna encyklopedia",43232
+https://bg.wikipedia.org/wiki/,200 OK,2,617,167,Уикипедия,264090
+https://be.wikipedia.org/wiki/,200 OK,2,255,413,Вікіпедыя,137043
+https://bs.wikipedia.org/wiki/,200 OK,2,285,405,Wikipedia,137074
+https://bn.wikipedia.org/wiki/,200 OK,2,515,538,"উইকিপিডিয়া, একটি মুক্ত বিশ্বকোষ",228041
+https://br.wikipedia.org/wiki/,200 OK,2,516,680,Wikipedia,214930
+https://ary.wikipedia.org/wiki/%D9%88%D9%8A%D9%83%D9%8A%D9%BE%D9%8A%D8%AF%D9%8A%D8%A7:%D8%AA%D8%A7%D8%B5%D9%84_%D8%A8%D9%8A%D9%86%D8%A7,200 OK,3,152,349,ويكيپيديا:تاصل بينا - ويكيپيديا,98078
+https://ca.wikipedia.org/wiki/Viquip%C3%A8dia:Contacte,200 OK,3,173,354,"Viquipèdia:Contacte - Viquipèdia, l'enciclopèdia lliure",95817
+https://azb.wikipedia.org/wiki/%D9%88%DB%8C%DA%A9%DB%8C%E2%80%8C%D9%BE%D8%AF%DB%8C%D8%A7:%D8%A8%DB%8C%D8%B2%DB%8C%D9%85%E2%80%8C%D9%84%D9%87_%D8%A7%DB%8C%D8%B1%D8%AA%DB%8C%D8%A8%D8%A7%D8%B7,200 OK,3,153,434,ویکی‌پدیا:بیزیم‌له ایرتیباط - ویکی‌پدیا,105196
+https://bh.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%B8%E0%A4%82%E0%A4%AA%E0%A4%B0%E0%A5%8D%E0%A4%95,200 OK,3,151,447,विकिपीडिया:संपर्क - विकिपीडिया,103474
+https://anp.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%B8%E0%A4%82%E0%A4%AA%E0%A4%B0%E0%A5%8D%E0%A4%95_%E0%A4%95%E0%A4%B0%E0%A5%8C,200 OK,3,134,664,विकिपीडिया:संपर्क करौ - विकिपीडिया,92331
+https://bjn.wikipedia.org/wiki/Wikipidia:Hubungi_kami,200 OK,3,186,656,"Wikipidia:Hubungi kami - Wikipidia Banjar, kindai pangatahuan",97549
+https://als.wikipedia.org/wiki/Wikipedia:Kontakt,200 OK,3,169,741,Wikipedia:Kontakt - Alemannische Wikipedia,92273
+https://bn.wikipedia.org/wiki/%E0%A6%89%E0%A6%87%E0%A6%95%E0%A6%BF%E0%A6%AA%E0%A6%BF%E0%A6%A1%E0%A6%BF%E0%A6%AF%E0%A6%BC%E0%A6%BE:%E0%A6%86%E0%A6%AE%E0%A6%BE%E0%A6%A6%E0%A7%87%E0%A6%B0_%E0%A6%B8%E0%A6%BE%E0%A6%A5%E0%A7%87_%E0%A6%AF%E0%A7%8B%E0%A6%97%E0%A6%BE%E0%A6%AF%E0%A7%8B%E0%A6%97,200 OK,3,164,973,উইকিপিডিয়া:আমাদের সাথে যোগাযোগ - উইকিপিডিয়া,124672
+https://pl.wikipedia.org/w/index.php?title=Specjalna:Zaloguj&returnto=Wikipedia%3AKontakt+z+wikipedystami,200 OK,3,47,1493,"Zaloguj się – Wikipedia, wolna encyklopedia",43226
+https://pl.wikipedia.org/w/index.php?title=Specjalna:Utw%C3%B3rz_konto&returnto=Wikipedia%3AKontakt+z+wikipedystami,200 OK,3,49,2112,"Załóż nowe konto – Wikipedia, wolna encyklopedia",46533
+https://da.wikipedia.org/wiki/Hj%C3%A6lp:Kontakt_Wikipedia,200 OK,3,204,292,"Hjælp:Kontakt Wikipedia - Wikipedia, den frie encyklopædi",116326
+https://eo.wikipedia.org/wiki/Vikipedio:Kontaktoj,200 OK,3,186,322,Vikipedio:Kontaktoj - Vikipedio,109897
+https://cbk-zam.wikipedia.org/wiki/Wikipedia:Man_contact_kanamon,200 OK,3,150,391,Wikipedia:Man contact kanamon - Chavacano de Zamboanga Wikipedia - El Libre Enciclopedia,88027
+https://he.wikipedia.org/wiki/%D7%95%D7%99%D7%A7%D7%99%D7%A4%D7%93%D7%99%D7%94:%D7%99%D7%A6%D7%99%D7%A8%D7%AA_%D7%A7%D7%A9%D7%A8,200 OK,3,191,436,ויקיפדיה:יצירת קשר – ויקיפדיה,106035
+https://et.wikipedia.org/wiki/Vikipeedia:Kontakteeru_meiega,200 OK,3,199,474,Vikipeedia:Kontakteeru meiega – Vikipeedia,117517
+https://ckb.wikipedia.org/wiki/%D9%88%DB%8C%DA%A9%DB%8C%D9%BE%DB%8C%D8%AF%DB%8C%D8%A7:%D9%BE%DB%95%DB%8C%D9%88%DB%95%D9%86%D8%AF%DB%8C,200 OK,3,150,534,ویکیپیدیا:پەیوەندی - ویکیپیدیا، ئینسایکڵۆپیدیای ئازاد,102704
+https://el.wikipedia.org/wiki/%CE%92%CE%B9%CE%BA%CE%B9%CF%80%CE%B1%CE%AF%CE%B4%CE%B5%CE%B9%CE%B1:%CE%95%CF%80%CE%B9%CE%BA%CE%BF%CE%B9%CE%BD%CF%89%CE%BD%CE%AF%CE%B1,200 OK,3,171,590,Βικιπαίδεια:Επικοινωνία - Βικιπαίδεια,118923
+https://cs.wikipedia.org/wiki/Wikipedie:Kontakt,200 OK,3,204,647,Wikipedie:Kontakt – Wikipedie,116782
+https://cy.wikipedia.org/wiki/Wicipedia:Cysylltwch_%C3%A2_ni,200 OK,3,155,1045,Wicipedia:Cysylltwch â ni - Wicipedia,98429
+https://fi.wikipedia.org/wiki/Wikipedia:Yhteystiedot,200 OK,3,150,1579,Wikipedia:Yhteystiedot – Wikipedia,88534
+https://hu.wikipedia.org/wiki/Wikip%C3%A9dia:Kapcsolatfelv%C3%A9tel,200 OK,3,187,369,Wikipédia:Kapcsolatfelvétel – Wikipédia,107526
+https://hi.wikipedia.org/wiki/%E0%A4%B5%E0%A4%BF%E0%A4%95%E0%A4%BF%E0%A4%AA%E0%A5%80%E0%A4%A1%E0%A4%BF%E0%A4%AF%E0%A4%BE:%E0%A4%B9%E0%A4%AE%E0%A5%87%E0%A4%82_%E0%A4%B8%E0%A4%AE%E0%A5%8D%E0%A4%AA%E0%A4%B0%E0%A5%8D%E0%A4%95_%E0%A4%95%E0%A4%B0%E0%A5%87%E0%A4%82,200 OK,3,167,409,विकिपीडिया:हमें सम्पर्क करें - विकिपीडिया,122127
+https://hr.wikipedia.org/wiki/Wikipedija:Kontaktirajte_nas,200 OK,3,145,576,Wikipedija:Kontaktirajte nas – Wikipedija,86532
+https://id.wikipedia.org/wiki/Wikipedia:Hubungi_kami,200 OK,3,171,829,"Wikipedia:Hubungi kami - Wikipedia bahasa Indonesia, ensiklopedia bebas",108638
+https://jv.wikipedia.org/wiki/Wikip%C3%A9dia:Sesambungan,200 OK,3,149,1091,Wikipédia:Sesambungan - Wikipédia,90311
+https://ary.wikipedia.org/wiki/%D9%88%D9%8A%D9%83%D9%8A%D9%BE%D9%8A%D8%AF%D9%8A%D8%A7:%D8%A2%D8%AE%D8%B1_%D8%A7%D9%84%D8%A3%D8%AD%D8%AF%D8%A7%D8%AB,200 OK,4,0,335,ويكيپيديا:لخبار ديال الصفحة اللولا - ويكيپيديا,124195
+https://ary.wikipedia.org/wiki/%D8%AE%D8%A7%D8%B5:%D8%A3%D8%AD%D8%AF%D8%AB_%D8%A7%D9%84%D8%AA%D8%BA%D9%8A%D9%8A%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D9%85%D9%88%D8%B5%D9%88%D9%84%D8%A9,404 Not Found,4,0,604,تبديلات عندها علاقة - ويكيپيديا,69364
+https://ary.wikipedia.org/wiki/%D9%88%D9%8A%D9%83%D9%8A%D9%BE%D9%8A%D8%AF%D9%8A%D8%A7:%D9%84%D8%A8%D8%B1%D9%84%D9%85%D8%A7%D9%86,200 OK,4,0,490,ويكيپيديا:لبرلمان - ويكيپيديا,791855
+https://ary.wikipedia.org/wiki/%D8%AE%D8%A7%D8%B5:%D8%B9%D8%B4%D9%88%D8%A7%D8%A6%D9%8A,200 OK,4,0,832,الدخيسة - ويكيپيديا,83307
+https://ary.wikipedia.org/wiki/%D8%AE%D8%A7%D8%B5:%D8%B5%D9%81%D8%AD%D8%A7%D8%AA_%D8%AE%D8%A7%D8%B5%D8%A9,200 OK,4,0,958,صفحات خاصة - ويكيپيديا,95704
+https://ary.wikipedia.org/wiki/%D8%AE%D8%A7%D8%B5:%D8%A8%D8%AD%D8%AB,200 OK,4,0,1022,قلّب - ويكيپيديا,58780
+https://donate.wikimedia.org/?wmf_source=donate&wmf_medium=sidebar&wmf_campaign=ary.wikipedia.org&uselang=ary,200 OK,4,0,1192,تبرع الآن - Donate,58994
+https://ary.wikipedia.org/wiki/%D8%AE%D8%A7%D8%B5:%D8%A3%D8%AD%D8%AF%D8%AB_%D8%A7%D9%84%D8%AA%D8%BA%D9%8A%D9%8A%D8%B1%D8%A7%D8%AA,200 OK,4,0,1376,التبديلات اللخرة - ويكيپيديا,197662
+https://ary.wikipedia.org/w/index.php?title=%D8%AE%D8%A7%D8%B5:%D8%AF%D8%AE%D9%88%D9%84_%D8%A7%D9%84%D9%85%D8%B3%D8%AA%D8%AE%D8%AF%D9%85&returnto=%D9%88%D9%8A%D9%83%D9%8A%D9%BE%D9%8A%D8%AF%D9%8A%D8%A7%3A%D8%AA%D8%A7%D8%B5%D9%84+%D8%A8%D9%8A%D9%86%D8%A7,200 OK,4,0,1924,تكونيكطا - ويكيپيديا,46282
+https://ary.wikipedia.org/w/index.php?title=%D8%AE%D8%A7%D8%B5:%D8%A5%D9%86%D8%B4%D8%A7%D8%A1_%D8%AD%D8%B3%D8%A7%D8%A8&returnto=%D9%88%D9%8A%D9%83%D9%8A%D9%BE%D9%8A%D8%AF%D9%8A%D8%A7%3A%D8%AA%D8%A7%D8%B5%D9%84+%D8%A8%D9%8A%D9%86%D8%A7,200 OK,4,0,2189,دير كونط - ويكيپيديا,49227
+https://ary.wikipedia.org/w/index.php?title=%D9%84%D9%85%D8%AF%D8%A7%D9%83%D8%B1%D8%A9_%D8%AF_%D9%88%D9%8A%D9%83%D9%8A%D9%BE%D9%8A%D8%AF%D9%8A%D8%A7:%D8%AA%D8%A7%D8%B5%D9%84_%D8%A8%D9%8A%D9%86%D8%A7&action=edit&redlink=1,404 Not Found,4,0,369,لمداكرة د ويكيپيديا:تاصل بينا - ويكيپيديا,45699
+https://ary.wikipedia.org/w/index.php?title=%D9%88%D9%8A%D9%83%D9%8A%D9%BE%D9%8A%D8%AF%D9%8A%D8%A7:%D8%AA%D8%A7%D8%B5%D9%84_%D8%A8%D9%8A%D9%86%D8%A7&oldid=303057,200 OK,4,0,362,ويكيپيديا:تاصل بينا - ويكيپيديا,100036
+https://ary.wikipedia.org/w/index.php?title=%D8%AE%D8%A7%D8%B5:%D9%83%D8%AA%D8%A7%D8%A8&bookcmd=book_creator&referer=%D9%88%D9%8A%D9%83%D9%8A%D9%BE%D9%8A%D8%AF%D9%8A%D8%A7%3A%D8%AA%D8%A7%D8%B5%D9%84+%D8%A8%D9%8A%D9%86%D8%A7,200 OK,4,0,388,منشئ الكتب - ويكيپيديا,40744
+https://ary.wikipedia.org/wiki/%D8%AE%D8%A7%D8%B5:%D9%85%D8%A7%D8%B0%D8%A7_%D9%8A%D8%B5%D9%84_%D9%87%D9%86%D8%A7/%D9%88%D9%8A%D9%83%D9%8A%D9%BE%D9%8A%D8%AF%D9%8A%D8%A7:%D8%AA%D8%A7%D8%B5%D9%84_%D8%A8%D9%8A%D9%86%D8%A7,200 OK,4,0,404,"الصفحات لي كايديو لـ ""ويكيپيديا:تاصل بينا"" - ويكيپيديا",59566
+https://ary.wikipedia.org/w/index.php?title=%D9%88%D9%8A%D9%83%D9%8A%D9%BE%D9%8A%D8%AF%D9%8A%D8%A7:%D8%AA%D8%A7%D8%B5%D9%84_%D8%A8%D9%8A%D9%86%D8%A7&useparsoid=0,200 OK,4,0,429,ويكيپيديا:تاصل بينا - ويكيپيديا,96708
+https://ary.wikipedia.org/w/index.php?title=%D9%88%D9%8A%D9%83%D9%8A%D9%BE%D9%8A%D8%AF%D9%8A%D8%A7:%D8%AA%D8%A7%D8%B5%D9%84_%D8%A8%D9%8A%D9%86%D8%A7&action=info,200 OK,4,0,659,"المعلومات على ""ويكيپيديا:تاصل بينا"" - ويكيپيديا",56929
+https://ary.wikipedia.org/wiki/%D8%AE%D8%A7%D8%B5:%D8%A3%D8%AD%D8%AF%D8%AB_%D8%A7%D9%84%D8%AA%D8%BA%D9%8A%D9%8A%D8%B1%D8%A7%D8%AA_%D8%A7%D9%84%D9%85%D9%88%D8%B5%D9%88%D9%84%D8%A9/%D9%88%D9%8A%D9%83%D9%8A%D9%BE%D9%8A%D8%AF%D9%8A%D8%A7:%D8%AA%D8%A7%D8%B5%D9%84_%D8%A8%D9%8A%D9%86%D8%A7,404 Not Found,4,0,695,تبديلات عندها علاقة - ويكيپيديا,75858
+https://ary.wikipedia.org/w/index.php?title=%D8%AE%D8%A7%D8%B5:%D8%AA%D9%82%D8%B5%D9%8A%D8%B1_%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D8%B1&url=https%3A%2F%2Fary.wikipedia.org%2Fwiki%2F%25D9%2588%25D9%258A%25D9%2583%25D9%258A%25D9%25BE%25D9%258A%25D8%25AF%25D9%258A%25D8%25A7%3A%25D8%25AA%25D8%25A7%25D8%25B5%25D9%2584_%25D8%25A8%25D9%258A%25D9%2586%25D8%25A7,200 OK,4,0,726,مقصر الليانات - ويكيپيديا,44016
+https://ary.wikipedia.org/w/index.php?title=%D9%88%D9%8A%D9%83%D9%8A%D9%BE%D9%8A%D8%AF%D9%8A%D8%A7:%D8%AA%D8%A7%D8%B5%D9%84_%D8%A8%D9%8A%D9%86%D8%A7&action=edit,200 OK,4,0,827,تعديل ويكيپيديا:تاصل بينا - ويكيپيديا,62647
+https://ary.wikipedia.org/w/index.php?title=%D9%88%D9%8A%D9%83%D9%8A%D9%BE%D9%8A%D8%AF%D9%8A%D8%A7:%D8%AA%D8%A7%D8%B5%D9%84_%D8%A8%D9%8A%D9%86%D8%A7&action=history,200 OK,4,0,977,"""ويكيپيديا:تاصل بينا"": تويرخ د لڤيرسيونات - ويكيپيديا",103993
+https://ary.wikipedia.org/w/index.php?title=%D8%AE%D8%A7%D8%B5:DownloadAsPdf&page=%D9%88%D9%8A%D9%83%D9%8A%D9%BE%D9%8A%D8%AF%D9%8A%D8%A7%3A%D8%AA%D8%A7%D8%B5%D9%84_%D8%A8%D9%8A%D9%86%D8%A7&action=show-download-screen,200 OK,4,0,415,جبد على شكل PDF - ويكيپيديا,39081
+https://ary.wikipedia.org/wiki/%D9%88%D9%8A%D9%83%D9%8A%D9%BE%D9%8A%D8%AF%D9%8A%D8%A7:%D8%B5%D9%81%D8%AD%D8%A9_%D8%AF_%D9%84%D9%85%D8%AF%D8%A7%D9%83%D8%B1%D8%A9?action=edit&redlink=1,200 OK,4,0,415,مصاوبة د ويكيپيديا:صفحة د لمداكرة - ويكيپيديا,57745
+https://ary.wikipedia.org/w/index.php?title=%D9%88%D9%8A%D9%83%D9%8A%D9%BE%D9%8A%D8%AF%D9%8A%D8%A7:%D8%AA%D8%A7%D8%B5%D9%84_%D8%A8%D9%8A%D9%86%D8%A7&printable=yes,200 OK,4,0,598,ويكيپيديا:تاصل بينا - ويكيپيديا,98176
+https://ary.wikipedia.org/wiki/%D9%81%D9%8A%D8%B4%D9%8A:Contactus-wmcolors.svg,200 OK,4,0,913,فيشي:Contactus-wmcolors.svg - ويكيپيديا,117489
+https://ary.wikipedia.org/wiki/%D9%88%D9%8A%D9%83%D9%8A%D9%BE%D9%8A%D8%AF%D9%8A%D8%A7:%D9%84%D9%83%D8%AA%D8%A7%D8%AA%D8%A8%D9%8A%D8%A7,200 OK,4,0,1044,ويكيپيديا:كتاتبيا - ويكيپيديا,110029

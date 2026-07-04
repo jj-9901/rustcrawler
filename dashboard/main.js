@@ -15,6 +15,9 @@ function renderCards(stats) {
   document.getElementById('stat-nodes').textContent    = stats.unique_nodes;
   document.getElementById('stat-time').textContent     = stats.crawl_time_secs.toFixed(2) + 's';
   document.getElementById('stat-health').textContent   = stats.health_score + '%';
+  document.getElementById('stat-deadends').textContent   = stats.dead_ends;
+  document.getElementById('stat-density').textContent    = stats.graph_density.toFixed(4);
+  document.getElementById('stat-components').textContent = stats.connected_components;
 
   const healthCard = document.getElementById('card-health');
   if (stats.health_score >= 80) healthCard.className = 'card green';
@@ -149,4 +152,40 @@ document.addEventListener('DOMContentLoaded', () => {
   renderHealth(stats);
   renderExternalDomains(stats.external_domains);
   renderGraph(nodes, edges);
+
+  // Depth color toggle — must be set AFTER renderGraph runs
+  const depthColorMap = ['#e06c75', '#98c379', '#61afef', '#e5c07b', '#c678dd', '#56b6c2'];
+  let colorByDepth = false;
+
+  document.getElementById('btn-color-depth').onclick = () => {
+    colorByDepth = !colorByDepth;
+
+    document.getElementById('btn-color-depth').style.background =
+      colorByDepth ? '#61afef' : '#21253a';
+
+    // Build dynamic legend
+    const legendDepth = document.getElementById('legend-depth');
+    if (colorByDepth) {
+      legendDepth.style.display = 'flex';
+      legendDepth.style.gap = '12px';
+      legendDepth.innerHTML = depthColorMap.map((color, i) => `
+        <div class="legend-item">
+          <div class="legend-dot" style="background:${color}"></div>
+          Depth ${i}
+        </div>
+      `).join('');
+    } else {
+      legendDepth.style.display = 'none';
+      legendDepth.innerHTML = '';
+    }
+
+    d3.selectAll('circle').attr('fill', (d, i) => {
+      if (colorByDepth) {
+        if (d.depth === undefined || d.depth === 99) return '#888';
+        return depthColorMap[d.depth % depthColorMap.length];
+      }
+      if (i === 0) return '#e06c75';
+      return '#61afef';
+    });
+  };
 });
