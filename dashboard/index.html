@@ -66,11 +66,22 @@
       <div class="value" id="stat-components">—</div>
       <div class="label">Components</div>
     </div>
+    <div class="card yellow">
+      <div class="value" id="stat-duplicates">—</div>
+      <div class="label">Duplicate Pages</div>
+    </div>
+    <div class="card">
+      <div class="value" id="stat-redirects">—</div>
+      <div class="label">Redirects</div>
+    </div>
   </div>
 
   <!-- Graph -->
   <div class="section">
     <h2>Link Graph</h2>
+    <div class="search-bar" style="margin-bottom:12px">
+      <input id="graph-search" type="text" placeholder="Search and highlight a node by URL...">
+    </div>
     <div id="graph-container">
       <svg id="graph-svg"></svg>
       <div class="graph-controls">
@@ -163,7 +174,9 @@
             <th>Depth</th>
             <th>Response Time</th>
             <th>Size</th>
-            <th>Links Found</th>
+            <th>Links</th>
+            <th>Redirects</th>
+            <th>Duplicate</th>
             <th>PageRank</th>
           </tr>
         </thead>

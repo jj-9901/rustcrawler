@@ -18,7 +18,10 @@ function renderCards(stats) {
   document.getElementById('stat-deadends').textContent   = stats.dead_ends;
   document.getElementById('stat-density').textContent    = stats.graph_density.toFixed(4);
   document.getElementById('stat-components').textContent = stats.connected_components;
-
+  const dupEl = document.getElementById('stat-duplicates');
+  const redEl = document.getElementById('stat-redirects');
+  if (dupEl) dupEl.textContent = stats.duplicate_pages || 0;
+  if (redEl) redEl.textContent = stats.redirect_pages || 0;
   const healthCard = document.getElementById('card-health');
   if (stats.health_score >= 80) healthCard.className = 'card green';
   else if (stats.health_score >= 50) healthCard.className = 'card yellow';
@@ -30,19 +33,24 @@ function renderTable(pages) {
   const tbody = document.getElementById('pages-tbody');
 
   function draw(filtered) {
-      tbody.innerHTML = filtered.map(r => `
-        <tr>
-          <td class="url-cell"><a href="${r.url}" target="_blank">${r.url}</a></td>
-          <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#abb2bf"
-              title="${r.title}">${r.title}</td>
-          <td class="${r.status === 'ERROR' ? 'status-error' : 'status-ok'}">${r.status}</td>
-          <td>${r.depth}</td>
-          <td>${r.response_time_ms}ms</td>
-          <td>${formatBytes(r.size_bytes)}</td>
-          <td>${r.links_found}</td>
-          <td>${(r.pagerank || 0).toFixed(4)}</td>
-        </tr>
-      `).join('');
+    tbody.innerHTML = filtered.map(r => `
+      <tr>
+        <td class="url-cell"><a href="${r.url}" target="_blank">${r.url}</a></td>
+        <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
+            color:#abb2bf" title="${r.title}">${r.title}</td>
+        <td class="${r.status === 'ERROR' ? 'status-error' : 'status-ok'}">${r.status}</td>
+        <td>${r.depth}</td>
+        <td>${r.response_time_ms}ms</td>
+        <td>${formatBytes(r.size_bytes)}</td>
+        <td>${r.links_found}</td>
+        <td>${r.redirects > 0 ?
+          `<span style="color:#e5c07b">${r.redirects} hop${r.redirects > 1 ? 's' : ''}</span>`
+          : '—'}</td>
+        <td>${r.is_duplicate ?
+          '<span style="color:#e06c75">Yes</span>' : '—'}</td>
+        <td>${(r.pagerank || 0).toFixed(4)}</td>
+      </tr>
+    `).join('');
   }
 
   draw(pages);
@@ -188,4 +196,21 @@ document.addEventListener('DOMContentLoaded', () => {
       return '#61afef';
     });
   };
+  // Graph search
+  document.getElementById('graph-search').addEventListener('input', e => {
+    const q = e.target.value.toLowerCase().trim();
+
+    if (!q) {
+      d3.selectAll('circle').attr('opacity', 1).attr('stroke', '#0f1117').attr('stroke-width', 2);
+      return;
+    }
+
+    d3.selectAll('circle').each(function(d) {
+      const matches = d.url.toLowerCase().includes(q);
+      d3.select(this)
+        .attr('opacity', matches ? 1 : 0.15)
+        .attr('stroke', matches ? '#e5c07b' : '#0f1117')
+        .attr('stroke-width', matches ? 4 : 2);
+    });
+  });
 });

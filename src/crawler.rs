@@ -66,32 +66,54 @@ pub async fn crawl(
 
                 tokio::spawn(async move {
                     match fetch_page(&client, &url).await {
-                        Ok((body, status, elapsed_ms)) => {
+                        Ok(result) => {
                             *pages_crawled.lock().await += 1;
 
                             let links = if depth < max_depth {
-                                extract_links(&body, &url)
+                                extract_links(&result.body, &result.final_url)
                             } else {
                                 vec![]
                             };
 
                             let links_found = links.len();
-                            let title = extract_title(&body);
-                            let size_bytes = body.len();
+                            let title = extract_title(&result.body);
+                            let size_bytes = result.body.len();
+
+                            // Duplicate detection: same title and size as another page
+                            let is_duplicate = {
+                                let recs = records.lock().await;
+                                recs.iter().any(|r| {
+                                    r.title == title
+                                        && r.size_bytes == size_bytes
+                                        && r.url != url
+                                        && title != "No title"
+                                        && title != "Error"
+                                })
+                            };
 
                             println!(
-                                "  [{}] {} ({}ms, {} links, {})",
-                                status, url, elapsed_ms, links_found, title
+                                "  [{}] {} ({}ms, {} links, {}{})",
+                                result.status, url, result.elapsed_ms, links_found, title,
+                                if !result.redirect_chain.is_empty() {
+                                    format!(" ↳ {} redirect(s)", result.redirect_chain.len())
+                                } else {
+                                    String::new()
+                                }
                             );
+
+                            let redirect_count = result.redirect_chain.len();
 
                             records.lock().await.push(PageRecord {
                                 url: url.clone(),
-                                status,
+                                status: result.status,
                                 depth,
                                 links_found,
-                                response_time_ms: elapsed_ms,
+                                response_time_ms: result.elapsed_ms,
                                 title,
                                 size_bytes,
+                                redirect_count,
+                                redirect_chain: result.redirect_chain,
+                                is_duplicate,
                             });
 
                             if depth < max_depth {
@@ -113,7 +135,7 @@ pub async fn crawl(
                         }
                         Err(e) => {
                             println!("  [ERROR] {} — {}", url, e);
-                            records.lock().await.push(PageRecord {
+                                records.lock().await.push(PageRecord {
                                 url: url.clone(),
                                 status: "ERROR".to_string(),
                                 depth,
@@ -121,6 +143,9 @@ pub async fn crawl(
                                 response_time_ms: 0,
                                 title: "Error".to_string(),
                                 size_bytes: 0,
+                                redirect_chain: vec![],
+                                redirect_count: 0,
+                                is_duplicate: false,
                             });
                         }
                     }

@@ -106,6 +106,22 @@ pub fn print_analytics(records: &[PageRecord], edges: &[LinkEdge], start_url: &s
         println!("    ... and {} more", orphans.len() - 5);
     }
 
+    // Duplicates
+    let duplicates = records.iter().filter(|r| r.is_duplicate).count();
+    println!();
+    println!("  Duplicate pages   : {}", duplicates);
+
+    // Redirect chains
+    let redirected: Vec<_> = records.iter().filter(|r| r.redirect_count > 0).collect();
+    println!("  Pages with redirects: {}", redirected.len());
+    for r in redirected.iter().take(3) {
+        println!(
+            "    {} → {} hops",
+            shorten(&r.url, 50),
+            r.redirect_chain.len()
+        );
+    }
+
     // Avg links per page
     let total_links: usize = records.iter().map(|r| r.links_found).sum();
     let avg_links = if records.is_empty() {

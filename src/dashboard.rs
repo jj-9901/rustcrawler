@@ -102,9 +102,10 @@ pub fn generate_report(
     let pages_json: String = records.iter().map(|r| {
         let pr = pagerank.get(&r.url).copied().unwrap_or(0.0);
         format!(
-            r#"{{"url":"{}","status":"{}","depth":{},"response_time_ms":{},"links_found":{},"pagerank":{:.4},"title":"{}","size_bytes":{}}}"#,
+            r#"{{"url":"{}","status":"{}","depth":{},"response_time_ms":{},"links_found":{},"pagerank":{:.4},"title":"{}","size_bytes":{},"is_duplicate":{},"redirects":{}}}"#,
             escape_json(&r.url), r.status, r.depth, r.response_time_ms,
-            r.links_found, pr, escape_json(&r.title), r.size_bytes
+            r.links_found, pr, escape_json(&r.title), r.size_bytes,
+            r.is_duplicate, r.redirect_count
         )
     }).collect::<Vec<_>>().join(",");
 
@@ -129,13 +130,17 @@ pub fn generate_report(
     "external_domains": [{}],
     "dead_ends": {},
     "graph_density": {:.4},
-    "connected_components": {}
+    "connected_components": {},
+    "duplicate_pages": {},
+    "redirect_pages": {}
     }}"#,
         records.len(), successful, broken, avg_ms,
         edges.len(), node_set.len(), total_time_secs,
         internal, external, health_score,
         health_issues_json, ext_domains_json,
-        dead_ends.len(), density, components
+        dead_ends.len(), density, components,
+        records.iter().filter(|r| r.is_duplicate).count(),
+        records.iter().filter(|r| !r.redirect_chain.is_empty()).count()
     );
 
     // ── Data script block ─────────────────────────────────────

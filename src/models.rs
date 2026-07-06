@@ -9,6 +9,10 @@ pub struct PageRecord {
     pub response_time_ms: u128,
     pub title: String,
     pub size_bytes: usize,
+    #[serde(skip)]
+    pub redirect_chain: Vec<String>,
+    pub redirect_count: usize,
+    pub is_duplicate: bool,
 }
 
 #[derive(Debug, Clone, Serialize)]
