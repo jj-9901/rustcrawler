@@ -287,7 +287,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('btn-color-depth').style.background =
       colorByDepth ? '#61afef' : '#21253a';
 
-    // Build dynamic legend
     const legendDepth = document.getElementById('legend-depth');
     if (colorByDepth) {
       legendDepth.style.display = 'flex';
@@ -303,12 +302,22 @@ document.addEventListener('DOMContentLoaded', () => {
       legendDepth.innerHTML = '';
     }
 
+    // Build inDegree map from edges
+    const inDegree = {};
+    window.__GRAPH_NODES__.forEach(n => inDegree[n.id] = 0);
+    window.__GRAPH_EDGES__.forEach(e => {
+      const tid = typeof e.target === 'object' ? e.target.id : e.target;
+      if (inDegree[tid] !== undefined) inDegree[tid]++;
+    });
+
     d3.selectAll('circle').attr('fill', (d, i) => {
       if (colorByDepth) {
         if (d.depth === undefined || d.depth === 99) return '#888';
         return depthColorMap[d.depth % depthColorMap.length];
       }
+      // Restore original colors
       if (i === 0) return '#e06c75';
+      if ((inDegree[d.id] || 0) > 3) return '#c678dd';
       return '#61afef';
     });
   };
