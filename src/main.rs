@@ -1,4 +1,6 @@
 mod analytics;
+mod benchmark;
+mod config;
 mod crawler;
 mod dashboard;
 mod exporter;
@@ -10,52 +12,36 @@ mod parser;
 use clap::Parser;
 use std::time::Instant;
 
-/// RustCrawler - A web crawler written in Rust
-#[derive(Parser, Debug)]
-#[command(name = "rustcrawler")]
-#[command(about = "Crawls a website and extracts links", long_about = None)]
-struct Args {
-    /// The starting URL to crawl
-    #[arg(short, long)]
-    url: String,
-
-    /// Maximum depth to crawl
-    #[arg(short, long, default_value_t = 2)]
-    depth: u32,
-
-    /// Maximum number of pages to visit
-    #[arg(short, long, default_value_t = 50)]
-    max_pages: u32,
-
-    /// Number of concurrent workers
-    #[arg(short, long, default_value_t = 5)]
-    workers: usize,
-
-    /// Output CSV file path
-    #[arg(short, long, default_value = "crawl_results.csv")]
-    output: String,
-
-    /// Output JSON file path
-    #[arg(short, long, default_value = "crawl_results.json")]
-    json: String,
-
-    /// Output graph DOT file path
-    #[arg(short, long, default_value = "graph.dot")]
-    graph: String,
-}
-
 #[tokio::main]
 async fn main() {
-    let args = Args::parse();
+    let args = config::Args::parse();
 
+    // ── Benchmark mode ────────────────────────────────────────
+    if args.benchmark {
+        let results = benchmark::run_benchmark(
+            &args.url,
+            args.depth,
+            args.max_pages,
+        ).await;
+
+        let json = serde_json::to_string_pretty(&results).unwrap();
+        std::fs::write("benchmark_results.json", json)
+            .expect("Could not write benchmark results");
+        println!("\nBenchmark saved to: benchmark_results.json");
+
+        dashboard::generate_benchmark_report(&results, &args.url, "benchmark.html");
+        println!("Report saved to: benchmark.html");
+        println!("Run: python3 -m http.server 8080");
+        println!("Open: http://localhost:8080/benchmark.html");
+        return;
+    }
+
+    // ── Normal crawl mode ─────────────────────────────────────
     println!("RustCrawler starting...");
     println!("  URL       : {}", args.url);
     println!("  Depth     : {}", args.depth);
     println!("  Max pages : {}", args.max_pages);
     println!("  Workers   : {}", args.workers);
-    println!("  Output    : {}", args.output);
-    println!("  JSON      : {}", args.json);
-    println!("  Graph     : {}", args.graph);
     println!();
 
     let start = Instant::now();
@@ -88,6 +74,6 @@ async fn main() {
         &edges,
         &args.url,
         total_time,
-        "report.html",
+        &args.report,
     );
 }

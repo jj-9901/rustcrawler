@@ -1,5 +1,5 @@
 {
-  "avg_response_ms": 1190,
+  "avg_response_ms": 1139,
   "broken_links": 0,
   "edges": [
     {
@@ -1435,386 +1435,6 @@
       "to": "https://books.toscrape.com/catalogue/category/books_1/page-2.html"
     },
     {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books_1/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books_1/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/travel_2/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/mystery_3/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/classics_6/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/romance_8/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/fiction_10/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/childrens_11/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/religion_12/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/music_14/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/default_15/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/science-fiction_16/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/sports-and-games_17/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/new-adult_20/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/young-adult_21/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/science_22/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/poetry_23/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/paranormal_24/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/art_25/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/psychology_26/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/autobiography_27/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/parenting_28/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/adult-fiction_29/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/humor_30/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/horror_31/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/history_32/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/food-and-drink_33/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/christian-fiction_34/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/business_35/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/biography_36/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/thriller_37/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/contemporary_38/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/spirituality_39/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/academic_40/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/self-help_41/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/historical_42/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/christian_43/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/suspense_44/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/short-stories_45/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/novels_46/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/health_47/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/politics_48/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/cultural_49/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/erotica_50/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/crime_51/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/forever-and-forever-the-courtship-of-henry-longfellow-and-fanny-appleton_894/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/forever-and-forever-the-courtship-of-henry-longfellow-and-fanny-appleton_894/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/a-flight-of-arrows-the-pathfinders-2_876/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/a-flight-of-arrows-the-pathfinders-2_876/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-house-by-the-lake_846/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-house-by-the-lake_846/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/mrs-houdini_821/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/mrs-houdini_821/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-marriage-of-opposites_759/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-marriage-of-opposites_759/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/glory-over-everything-beyond-the-kitchen-house_696/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/glory-over-everything-beyond-the-kitchen-house_696/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/love-lies-and-spies_622/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/love-lies-and-spies_622/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/a-paris-apartment_612/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/a-paris-apartment_612/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/lilac-girls_597/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/lilac-girls_597/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-constant-princess-the-tudor-court-1_493/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-constant-princess-the-tudor-court-1_493/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-invention-of-wings_448/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-invention-of-wings_448/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/world-without-end-the-pillars-of-the-earth-2_420/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/world-without-end-the-pillars-of-the-earth-2_420/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-passion-of-dolssa_351/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-passion-of-dolssa_351/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/girl-with-a-pearl-earring_322/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/girl-with-a-pearl-earring_322/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/voyager-outlander-3_299/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/voyager-outlander-3_299/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-red-tent_273/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-red-tent_273/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-last-painting-of-sara-de-vos_259/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-last-painting-of-sara-de-vos_259/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-guernsey-literary-and-potato-peel-pie-society_253/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-guernsey-literary-and-potato-peel-pie-society_253/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/girl-in-the-blue-coat_160/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/girl-in-the-blue-coat_160/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/page-2.html"
-    },
-    {
       "from": "https://books.toscrape.com/catalogue/category/books/mystery_3/index.html",
       "to": "https://books.toscrape.com/index.html"
     },
@@ -2193,6 +1813,386 @@
     {
       "from": "https://books.toscrape.com/catalogue/category/books/mystery_3/index.html",
       "to": "https://books.toscrape.com/catalogue/category/books/mystery_3/page-2.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books_1/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books_1/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/travel_2/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/mystery_3/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/classics_6/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/romance_8/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/fiction_10/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/childrens_11/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/religion_12/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/music_14/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/default_15/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/science-fiction_16/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/sports-and-games_17/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/new-adult_20/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/young-adult_21/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/science_22/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/poetry_23/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/paranormal_24/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/art_25/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/psychology_26/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/autobiography_27/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/parenting_28/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/adult-fiction_29/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/humor_30/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/horror_31/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/history_32/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/food-and-drink_33/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/christian-fiction_34/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/business_35/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/biography_36/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/thriller_37/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/contemporary_38/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/spirituality_39/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/academic_40/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/self-help_41/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/historical_42/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/christian_43/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/suspense_44/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/short-stories_45/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/novels_46/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/health_47/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/politics_48/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/cultural_49/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/erotica_50/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/crime_51/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/tipping-the-velvet_999/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/forever-and-forever-the-courtship-of-henry-longfellow-and-fanny-appleton_894/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/forever-and-forever-the-courtship-of-henry-longfellow-and-fanny-appleton_894/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/a-flight-of-arrows-the-pathfinders-2_876/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/a-flight-of-arrows-the-pathfinders-2_876/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-house-by-the-lake_846/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-house-by-the-lake_846/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/mrs-houdini_821/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/mrs-houdini_821/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-marriage-of-opposites_759/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-marriage-of-opposites_759/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/glory-over-everything-beyond-the-kitchen-house_696/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/glory-over-everything-beyond-the-kitchen-house_696/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/love-lies-and-spies_622/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/love-lies-and-spies_622/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/a-paris-apartment_612/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/a-paris-apartment_612/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/lilac-girls_597/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/lilac-girls_597/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-constant-princess-the-tudor-court-1_493/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-constant-princess-the-tudor-court-1_493/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-invention-of-wings_448/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-invention-of-wings_448/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/world-without-end-the-pillars-of-the-earth-2_420/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/world-without-end-the-pillars-of-the-earth-2_420/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-passion-of-dolssa_351/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-passion-of-dolssa_351/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/girl-with-a-pearl-earring_322/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/girl-with-a-pearl-earring_322/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/voyager-outlander-3_299/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/voyager-outlander-3_299/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-red-tent_273/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-red-tent_273/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-last-painting-of-sara-de-vos_259/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-last-painting-of-sara-de-vos_259/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-guernsey-literary-and-potato-peel-pie-society_253/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-guernsey-literary-and-potato-peel-pie-society_253/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/girl-in-the-blue-coat_160/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/girl-in-the-blue-coat_160/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/page-2.html"
     },
     {
       "from": "https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html",
@@ -2879,358 +2879,6 @@
       "to": "https://books.toscrape.com/catalogue/category/books/romance_8/page-2.html"
     },
     {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books_1/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books_1/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/travel_2/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/mystery_3/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/classics_6/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/romance_8/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/fiction_10/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/childrens_11/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/religion_12/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/music_14/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/default_15/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/science-fiction_16/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/sports-and-games_17/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/new-adult_20/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/young-adult_21/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/science_22/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/poetry_23/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/paranormal_24/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/art_25/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/psychology_26/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/autobiography_27/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/parenting_28/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/adult-fiction_29/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/humor_30/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/horror_31/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/history_32/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/food-and-drink_33/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/christian-fiction_34/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/business_35/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/biography_36/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/thriller_37/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/contemporary_38/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/spirituality_39/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/academic_40/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/self-help_41/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/historical_42/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/christian_43/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/suspense_44/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/short-stories_45/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/novels_46/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/health_47/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/politics_48/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/cultural_49/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/erotica_50/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/category/books/crime_51/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/i-had-a-nice-time-and-other-lies-how-to-find-love-sht-like-that_814/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/i-had-a-nice-time-and-other-lies-how-to-find-love-sht-like-that_814/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/will-you-wont-you-want-me_644/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/will-you-wont-you-want-me_644/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/keep-me-posted_594/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/keep-me-posted_594/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/grey-fifty-shades-4_592/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/grey-fifty-shades-4_592/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/meternity_478/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/meternity_478/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/some-women_341/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/some-women_341/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/shopaholic-ties-the-knot-shopaholic-3_340/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/shopaholic-ties-the-knot-shopaholic-3_340/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/can-you-keep-a-secret_315/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/can-you-keep-a-secret_315/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/twenties-girl_292/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/twenties-girl_292/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-undomestic-goddess_286/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-undomestic-goddess_286/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-nanny-diaries-nanny-1_265/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-nanny-diaries-nanny-1_265/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-devil-wears-prada-the-devil-wears-prada-1_243/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-devil-wears-prada-the-devil-wears-prada-1_243/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/something-borrowed-darcy-rachel-1_224/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/something-borrowed-darcy-rachel-1_224/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/something-blue-darcy-rachel-2_223/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/something-blue-darcy-rachel-2_223/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/ive-got-your-number_173/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/ive-got-your-number_173/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-edge-of-reason-bridget-jones-2_63/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/the-edge-of-reason-bridget-jones-2_63/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/bridget-joness-diary-bridget-jones-1_10/index.html"
-    },
-    {
-      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
-      "to": "https://books.toscrape.com/catalogue/bridget-joness-diary-bridget-jones-1_10/index.html"
-    },
-    {
       "from": "https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html",
       "to": "https://books.toscrape.com/index.html"
     },
@@ -3609,6 +3257,358 @@
     {
       "from": "https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html",
       "to": "https://books.toscrape.com/catalogue/category/books/sequential-art_5/page-2.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books_1/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books_1/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/travel_2/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/mystery_3/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/sequential-art_5/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/classics_6/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/philosophy_7/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/romance_8/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/fiction_10/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/childrens_11/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/religion_12/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/nonfiction_13/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/music_14/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/default_15/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/science-fiction_16/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/sports-and-games_17/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/add-a-comment_18/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/fantasy_19/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/new-adult_20/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/young-adult_21/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/science_22/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/poetry_23/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/paranormal_24/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/art_25/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/psychology_26/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/autobiography_27/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/parenting_28/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/adult-fiction_29/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/humor_30/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/horror_31/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/history_32/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/food-and-drink_33/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/christian-fiction_34/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/business_35/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/biography_36/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/thriller_37/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/contemporary_38/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/spirituality_39/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/academic_40/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/self-help_41/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/historical_42/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/christian_43/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/suspense_44/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/short-stories_45/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/novels_46/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/health_47/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/politics_48/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/cultural_49/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/erotica_50/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/category/books/crime_51/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/i-had-a-nice-time-and-other-lies-how-to-find-love-sht-like-that_814/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/i-had-a-nice-time-and-other-lies-how-to-find-love-sht-like-that_814/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/will-you-wont-you-want-me_644/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/will-you-wont-you-want-me_644/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/keep-me-posted_594/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/keep-me-posted_594/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/grey-fifty-shades-4_592/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/grey-fifty-shades-4_592/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/meternity_478/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/meternity_478/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/some-women_341/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/some-women_341/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/shopaholic-ties-the-knot-shopaholic-3_340/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/shopaholic-ties-the-knot-shopaholic-3_340/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/can-you-keep-a-secret_315/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/can-you-keep-a-secret_315/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/twenties-girl_292/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/twenties-girl_292/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-undomestic-goddess_286/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-undomestic-goddess_286/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-nanny-diaries-nanny-1_265/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-nanny-diaries-nanny-1_265/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-devil-wears-prada-the-devil-wears-prada-1_243/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-devil-wears-prada-the-devil-wears-prada-1_243/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/something-borrowed-darcy-rachel-1_224/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/something-borrowed-darcy-rachel-1_224/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/something-blue-darcy-rachel-2_223/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/something-blue-darcy-rachel-2_223/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/ive-got-your-number_173/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/ive-got-your-number_173/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-edge-of-reason-bridget-jones-2_63/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/the-edge-of-reason-bridget-jones-2_63/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/bridget-joness-diary-bridget-jones-1_10/index.html"
+    },
+    {
+      "from": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html",
+      "to": "https://books.toscrape.com/catalogue/bridget-joness-diary-bridget-jones-1_10/index.html"
     },
     {
       "from": "https://books.toscrape.com/catalogue/category/books/classics_6/index.html",
@@ -5397,7 +5397,7 @@
       "is_duplicate": false,
       "links_found": 94,
       "redirect_count": 0,
-      "response_time_ms": 1510,
+      "response_time_ms": 1446,
       "size_bytes": 51294,
       "status": "200 OK",
       "title": "All products | Books to Scrape - Sandbox",
@@ -5408,7 +5408,7 @@
       "is_duplicate": false,
       "links_found": 76,
       "redirect_count": 0,
-      "response_time_ms": 1078,
+      "response_time_ms": 1210,
       "size_bytes": 37009,
       "status": "200 OK",
       "title": "Travel | \n     Books to Scrape - Sandbox",
@@ -5419,7 +5419,7 @@
       "is_duplicate": true,
       "links_found": 94,
       "redirect_count": 0,
-      "response_time_ms": 1547,
+      "response_time_ms": 1428,
       "size_bytes": 51294,
       "status": "200 OK",
       "title": "All products | Books to Scrape - Sandbox",
@@ -5430,7 +5430,7 @@
       "is_duplicate": false,
       "links_found": 94,
       "redirect_count": 0,
-      "response_time_ms": 1398,
+      "response_time_ms": 1280,
       "size_bytes": 50607,
       "status": "200 OK",
       "title": "Books | \n     Books to Scrape - Sandbox",
@@ -5441,18 +5441,7 @@
       "is_duplicate": false,
       "links_found": 95,
       "redirect_count": 0,
-      "response_time_ms": 1451,
-      "size_bytes": 50109,
-      "status": "200 OK",
-      "title": "Historical Fiction | \n     Books to Scrape - Sandbox",
-      "url": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html"
-    },
-    {
-      "depth": 1,
-      "is_duplicate": false,
-      "links_found": 95,
-      "redirect_count": 0,
-      "response_time_ms": 1624,
+      "response_time_ms": 1328,
       "size_bytes": 50388,
       "status": "200 OK",
       "title": "Mystery | \n     Books to Scrape - Sandbox",
@@ -5461,9 +5450,20 @@
     {
       "depth": 1,
       "is_duplicate": false,
+      "links_found": 95,
+      "redirect_count": 0,
+      "response_time_ms": 1250,
+      "size_bytes": 50109,
+      "status": "200 OK",
+      "title": "Historical Fiction | \n     Books to Scrape - Sandbox",
+      "url": "https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html"
+    },
+    {
+      "depth": 1,
+      "is_duplicate": false,
       "links_found": 76,
       "redirect_count": 0,
-      "response_time_ms": 994,
+      "response_time_ms": 983,
       "size_bytes": 37032,
       "status": "200 OK",
       "title": "Philosophy | \n     Books to Scrape - Sandbox",
@@ -5474,7 +5474,7 @@
       "is_duplicate": false,
       "links_found": 95,
       "redirect_count": 0,
-      "response_time_ms": 1306,
+      "response_time_ms": 1256,
       "size_bytes": 50397,
       "status": "200 OK",
       "title": "Romance | \n     Books to Scrape - Sandbox",
@@ -5483,20 +5483,9 @@
     {
       "depth": 1,
       "is_duplicate": false,
-      "links_found": 88,
-      "redirect_count": 0,
-      "response_time_ms": 1247,
-      "size_bytes": 45308,
-      "status": "200 OK",
-      "title": "Womens Fiction | \n     Books to Scrape - Sandbox",
-      "url": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html"
-    },
-    {
-      "depth": 1,
-      "is_duplicate": false,
       "links_found": 95,
       "redirect_count": 0,
-      "response_time_ms": 1395,
+      "response_time_ms": 1309,
       "size_bytes": 51455,
       "status": "200 OK",
       "title": "Sequential Art | \n     Books to Scrape - Sandbox",
@@ -5505,9 +5494,20 @@
     {
       "depth": 1,
       "is_duplicate": false,
+      "links_found": 88,
+      "redirect_count": 0,
+      "response_time_ms": 1224,
+      "size_bytes": 45308,
+      "status": "200 OK",
+      "title": "Womens Fiction | \n     Books to Scrape - Sandbox",
+      "url": "https://books.toscrape.com/catalogue/category/books/womens-fiction_9/index.html"
+    },
+    {
+      "depth": 1,
+      "is_duplicate": false,
       "links_found": 92,
       "redirect_count": 0,
-      "response_time_ms": 1396,
+      "response_time_ms": 1279,
       "size_bytes": 47874,
       "status": "200 OK",
       "title": "Classics | \n     Books to Scrape - Sandbox",
@@ -5518,7 +5518,7 @@
       "is_duplicate": false,
       "links_found": 68,
       "redirect_count": 0,
-      "response_time_ms": 1030,
+      "response_time_ms": 1005,
       "size_bytes": 30933,
       "status": "200 OK",
       "title": "Religion | \n     Books to Scrape - Sandbox",
@@ -5529,7 +5529,7 @@
       "is_duplicate": false,
       "links_found": 95,
       "redirect_count": 0,
-      "response_time_ms": 1254,
+      "response_time_ms": 1238,
       "size_bytes": 49677,
       "status": "200 OK",
       "title": "Fiction | \n     Books to Scrape - Sandbox",
@@ -5540,7 +5540,7 @@
       "is_duplicate": false,
       "links_found": 95,
       "redirect_count": 0,
-      "response_time_ms": 1345,
+      "response_time_ms": 1277,
       "size_bytes": 49864,
       "status": "200 OK",
       "title": "Childrens | \n     Books to Scrape - Sandbox",
@@ -5551,7 +5551,7 @@
       "is_duplicate": false,
       "links_found": 95,
       "redirect_count": 0,
-      "response_time_ms": 1290,
+      "response_time_ms": 1234,
       "size_bytes": 52725,
       "status": "200 OK",
       "title": "Nonfiction | \n     Books to Scrape - Sandbox",
@@ -5562,29 +5562,7 @@
       "is_duplicate": false,
       "links_found": 0,
       "redirect_count": 0,
-      "response_time_ms": 1009,
-      "size_bytes": 18824,
-      "status": "200 OK",
-      "title": "Under the Tuscan Sun | Books to Scrape - Sandbox",
-      "url": "https://books.toscrape.com/catalogue/under-the-tuscan-sun_504/index.html"
-    },
-    {
-      "depth": 2,
-      "is_duplicate": false,
-      "links_found": 0,
-      "redirect_count": 0,
-      "response_time_ms": 1075,
-      "size_bytes": 20302,
-      "status": "200 OK",
-      "title": "Full Moon over Noah’s Ark: An Odyssey to Mount Ararat and Beyond | Books to Scrape - Sandbox",
-      "url": "https://books.toscrape.com/catalogue/full-moon-over-noahs-ark-an-odyssey-to-mount-ararat-and-beyond_811/index.html"
-    },
-    {
-      "depth": 2,
-      "is_duplicate": false,
-      "links_found": 0,
-      "redirect_count": 0,
-      "response_time_ms": 1018,
+      "response_time_ms": 995,
       "size_bytes": 20766,
       "status": "200 OK",
       "title": "A Summer In Europe | Books to Scrape - Sandbox",
@@ -5595,7 +5573,7 @@
       "is_duplicate": false,
       "links_found": 0,
       "redirect_count": 0,
-      "response_time_ms": 1018,
+      "response_time_ms": 995,
       "size_bytes": 18657,
       "status": "200 OK",
       "title": "See America: A Celebration of Our National Parks & Treasured Sites | Books to Scrape - Sandbox",
@@ -5606,7 +5584,29 @@
       "is_duplicate": false,
       "links_found": 0,
       "redirect_count": 0,
-      "response_time_ms": 1023,
+      "response_time_ms": 1070,
+      "size_bytes": 18824,
+      "status": "200 OK",
+      "title": "Under the Tuscan Sun | Books to Scrape - Sandbox",
+      "url": "https://books.toscrape.com/catalogue/under-the-tuscan-sun_504/index.html"
+    },
+    {
+      "depth": 2,
+      "is_duplicate": false,
+      "links_found": 0,
+      "redirect_count": 0,
+      "response_time_ms": 1074,
+      "size_bytes": 20302,
+      "status": "200 OK",
+      "title": "Full Moon over Noah’s Ark: An Odyssey to Mount Ararat and Beyond | Books to Scrape - Sandbox",
+      "url": "https://books.toscrape.com/catalogue/full-moon-over-noahs-ark-an-odyssey-to-mount-ararat-and-beyond_811/index.html"
+    },
+    {
+      "depth": 2,
+      "is_duplicate": false,
+      "links_found": 0,
+      "redirect_count": 0,
+      "response_time_ms": 974,
       "size_bytes": 20904,
       "status": "200 OK",
       "title": "Vagabonding: An Uncommon Guide to the Art of Long-Term World Travel | Books to Scrape - Sandbox",
@@ -5617,7 +5617,7 @@
       "is_duplicate": false,
       "links_found": 0,
       "redirect_count": 0,
-      "response_time_ms": 1082,
+      "response_time_ms": 996,
       "size_bytes": 18821,
       "status": "200 OK",
       "title": "The Great Railway Bazaar | Books to Scrape - Sandbox",
@@ -5628,29 +5628,7 @@
       "is_duplicate": false,
       "links_found": 0,
       "redirect_count": 0,
-      "response_time_ms": 1030,
-      "size_bytes": 19999,
-      "status": "200 OK",
-      "title": "1,000 Places to See Before You Die | Books to Scrape - Sandbox",
-      "url": "https://books.toscrape.com/catalogue/1000-places-to-see-before-you-die_1/index.html"
-    },
-    {
-      "depth": 2,
-      "is_duplicate": false,
-      "links_found": 0,
-      "redirect_count": 0,
-      "response_time_ms": 1086,
-      "size_bytes": 19123,
-      "status": "200 OK",
-      "title": "Neither Here nor There: Travels in Europe | Books to Scrape - Sandbox",
-      "url": "https://books.toscrape.com/catalogue/neither-here-nor-there-travels-in-europe_198/index.html"
-    },
-    {
-      "depth": 2,
-      "is_duplicate": false,
-      "links_found": 0,
-      "redirect_count": 0,
-      "response_time_ms": 1043,
+      "response_time_ms": 1001,
       "size_bytes": 18571,
       "status": "200 OK",
       "title": "A Year in Provence (Provence #1) | Books to Scrape - Sandbox",
@@ -5661,7 +5639,29 @@
       "is_duplicate": false,
       "links_found": 0,
       "redirect_count": 0,
-      "response_time_ms": 1012,
+      "response_time_ms": 1066,
+      "size_bytes": 19123,
+      "status": "200 OK",
+      "title": "Neither Here nor There: Travels in Europe | Books to Scrape - Sandbox",
+      "url": "https://books.toscrape.com/catalogue/neither-here-nor-there-travels-in-europe_198/index.html"
+    },
+    {
+      "depth": 2,
+      "is_duplicate": false,
+      "links_found": 0,
+      "redirect_count": 0,
+      "response_time_ms": 1006,
+      "size_bytes": 19999,
+      "status": "200 OK",
+      "title": "1,000 Places to See Before You Die | Books to Scrape - Sandbox",
+      "url": "https://books.toscrape.com/catalogue/1000-places-to-see-before-you-die_1/index.html"
+    },
+    {
+      "depth": 2,
+      "is_duplicate": false,
+      "links_found": 0,
+      "redirect_count": 0,
+      "response_time_ms": 963,
       "size_bytes": 19107,
       "status": "200 OK",
       "title": "The Road to Little Dribbling: Adventures of an American in Britain (Notes From a Small Island #2) | Books to Scrape - Sandbox",
@@ -5672,51 +5672,51 @@
       "is_duplicate": false,
       "links_found": 0,
       "redirect_count": 0,
-      "response_time_ms": 1059,
-      "size_bytes": 19448,
+      "response_time_ms": 1050,
+      "size_bytes": 19343,
       "status": "200 OK",
-      "title": "The House by the Lake | Books to Scrape - Sandbox",
-      "url": "https://books.toscrape.com/catalogue/the-house-by-the-lake_846/index.html"
+      "title": "A Murder in Time | Books to Scrape - Sandbox",
+      "url": "https://books.toscrape.com/catalogue/a-murder-in-time_877/index.html"
     },
     {
       "depth": 2,
       "is_duplicate": false,
       "links_found": 0,
       "redirect_count": 0,
-      "response_time_ms": 1024,
-      "size_bytes": 20060,
+      "response_time_ms": 996,
+      "size_bytes": 19541,
       "status": "200 OK",
-      "title": "Mrs. Houdini | Books to Scrape - Sandbox",
-      "url": "https://books.toscrape.com/catalogue/mrs-houdini_821/index.html"
+      "title": "The Murder of Roger Ackroyd (Hercule Poirot #4) | Books to Scrape - Sandbox",
+      "url": "https://books.toscrape.com/catalogue/the-murder-of-roger-ackroyd-hercule-poirot-4_852/index.html"
     },
     {
       "depth": 2,
       "is_duplicate": false,
       "links_found": 0,
       "redirect_count": 0,
-      "response_time_ms": 1019,
-      "size_bytes": 20276,
+      "response_time_ms": 997,
+      "size_bytes": 18098,
       "status": "200 OK",
-      "title": "Forever and Forever: The Courtship of Henry Longfellow and Fanny Appleton | Books to Scrape - Sandbox",
-      "url": "https://books.toscrape.com/catalogue/forever-and-forever-the-courtship-of-henry-longfellow-and-fanny-appleton_894/index.html"
+      "title": "In a Dark, Dark Wood | Books to Scrape - Sandbox",
+      "url": "https://books.toscrape.com/catalogue/in-a-dark-dark-wood_963/index.html"
     },
     {
       "depth": 2,
       "is_duplicate": false,
       "links_found": 0,
       "redirect_count": 0,
-      "response_time_ms": 988,
-      "size_bytes": 19943,
+      "response_time_ms": 973,
+      "size_bytes": 19106,
       "status": "200 OK",
-      "title": "A Flight of Arrows (The Pathfinders #2) | Books to Scrape - Sandbox",
-      "url": "https://books.toscrape.com/catalogue/a-flight-of-arrows-the-pathfinders-2_876/index.html"
+      "title": "The Past Never Ends | Books to Scrape - Sandbox",
+      "url": "https://books.toscrape.com/catalogue/the-past-never-ends_942/index.html"
     },
     {
       "depth": 2,
       "is_duplicate": false,
       "links_found": 0,
       "redirect_count": 0,
-      "response_time_ms": 1372,
+      "response_time_ms": 1294,
       "size_bytes": 51015,
       "status": "200 OK",
       "title": "Books | \n     Books to Scrape - Sandbox",

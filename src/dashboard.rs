@@ -236,3 +236,223 @@ fn escape_json(s: &str) -> String {
      .replace('\n', "\\n")
      .replace('\r', "\\r")
 }
+
+pub fn generate_benchmark_report(
+    results: &[crate::benchmark::BenchmarkResult],
+    url: &str,
+    path: &str,
+) {
+    let results_json = serde_json::to_string(results).unwrap();
+
+    let max_pages_per_sec = results
+        .iter()
+        .map(|r| r.pages_per_sec)
+        .fold(0.0f64, f64::max);
+
+    let speedup = if results.first().map(|r| r.pages_per_sec).unwrap_or(0.0) > 0.0 {
+        let baseline = results[0].pages_per_sec;
+        results.last().map(|r| r.pages_per_sec / baseline).unwrap_or(1.0)
+    } else {
+        1.0
+    };
+
+    let html = format!(r#"<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RustCrawler Benchmark</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+<link rel="stylesheet" href="dashboard/style.css">
+</head>
+<body>
+<header>
+  <div>
+    <h1>⚡ RustCrawler Benchmark</h1>
+    <p>Concurrency performance analysis for: <strong>{url}</strong></p>
+  </div>
+</header>
+<div class="container">
+
+  <div class="cards">
+    <div class="card green">
+      <div class="value">{speedup:.1}x</div>
+      <div class="label">Max Speedup</div>
+    </div>
+    <div class="card">
+      <div class="value">{max_pages_per_sec:.1}</div>
+      <div class="label">Peak Pages/sec</div>
+    </div>
+    <div class="card">
+      <div class="value">{results_len}</div>
+      <div class="label">Worker Configs Tested</div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Pages per Second by Worker Count</h2>
+    <div class="analytics-card">
+      <div id="chart-bars"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Time vs Workers</h2>
+    <div class="analytics-card">
+      <div id="chart-time"></div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>Raw Results</h2>
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Workers</th>
+            <th>Pages Crawled</th>
+            <th>Total Time</th>
+            <th>Pages/sec</th>
+            <th>Avg Response</th>
+            <th>Speedup vs 1 Worker</th>
+          </tr>
+        </thead>
+        <tbody id="results-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+<script>
+const results = {results_json};
+const baseline = results[0].pages_per_sec;
+
+// Table
+const tbody = document.getElementById('results-tbody');
+tbody.innerHTML = results.map(r => `
+  <tr>
+    <td>${{r.workers}}</td>
+    <td>${{r.pages_crawled}}</td>
+    <td>${{r.total_time_secs.toFixed(2)}}s</td>
+    <td style="color:#98c379">${{r.pages_per_sec.toFixed(2)}}</td>
+    <td>${{r.avg_response_ms}}ms</td>
+    <td style="color:#61afef">${{(r.pages_per_sec / baseline).toFixed(2)}}x</td>
+  </tr>
+`).join('');
+
+// Pages/sec bar chart
+const margin = {{top: 20, right: 30, bottom: 40, left: 60}};
+const width  = document.getElementById('chart-bars').clientWidth - margin.left - margin.right || 700;
+const height = 300 - margin.top - margin.bottom;
+
+const svg1 = d3.select('#chart-bars')
+  .append('svg')
+  .attr('width', width + margin.left + margin.right)
+  .attr('height', height + margin.top + margin.bottom)
+  .append('g')
+  .attr('transform', `translate(${{margin.left}},${{margin.top}})`);
+
+const x1 = d3.scaleBand()
+  .domain(results.map(r => r.workers + ' workers'))
+  .range([0, width]).padding(0.3);
+
+const y1 = d3.scaleLinear()
+  .domain([0, d3.max(results, r => r.pages_per_sec) * 1.1])
+  .range([height, 0]);
+
+svg1.append('g').attr('transform', `translate(0,${{height}})`)
+  .call(d3.axisBottom(x1))
+  .selectAll('text').style('fill', '#888');
+
+svg1.append('g').call(d3.axisLeft(y1))
+  .selectAll('text').style('fill', '#888');
+
+svg1.selectAll('.domain,.tick line').attr('stroke', '#2a2d3e');
+
+svg1.selectAll('rect')
+  .data(results)
+  .join('rect')
+  .attr('x', r => x1(r.workers + ' workers'))
+  .attr('y', r => y1(r.pages_per_sec))
+  .attr('width', x1.bandwidth())
+  .attr('height', r => height - y1(r.pages_per_sec))
+  .attr('fill', '#61afef')
+  .attr('rx', 4);
+
+svg1.selectAll('.label')
+  .data(results)
+  .join('text')
+  .attr('class', 'label')
+  .attr('x', r => x1(r.workers + ' workers') + x1.bandwidth() / 2)
+  .attr('y', r => y1(r.pages_per_sec) - 6)
+  .attr('text-anchor', 'middle')
+  .attr('fill', '#e0e0e0')
+  .attr('font-size', '12px')
+  .text(r => r.pages_per_sec.toFixed(1));
+
+// Time line chart
+const svg2 = d3.select('#chart-time')
+  .append('svg')
+  .attr('width', width + margin.left + margin.right)
+  .attr('height', height + margin.top + margin.bottom)
+  .append('g')
+  .attr('transform', `translate(${{margin.left}},${{margin.top}})`);
+
+const x2 = d3.scaleLinear()
+  .domain([0, d3.max(results, r => r.workers)])
+  .range([0, width]);
+
+const y2 = d3.scaleLinear()
+  .domain([0, d3.max(results, r => r.total_time_secs) * 1.1])
+  .range([height, 0]);
+
+svg2.append('g').attr('transform', `translate(0,${{height}})`)
+  .call(d3.axisBottom(x2).ticks(5))
+  .selectAll('text').style('fill', '#888');
+
+svg2.append('g').call(d3.axisLeft(y2))
+  .selectAll('text').style('fill', '#888');
+
+svg2.selectAll('.domain,.tick line').attr('stroke', '#2a2d3e');
+
+const line = d3.line()
+  .x(r => x2(r.workers))
+  .y(r => y2(r.total_time_secs))
+  .curve(d3.curveMonotoneX);
+
+svg2.append('path')
+  .datum(results)
+  .attr('fill', 'none')
+  .attr('stroke', '#e06c75')
+  .attr('stroke-width', 2.5)
+  .attr('d', line);
+
+svg2.selectAll('circle')
+  .data(results)
+  .join('circle')
+  .attr('cx', r => x2(r.workers))
+  .attr('cy', r => y2(r.total_time_secs))
+  .attr('r', 5)
+  .attr('fill', '#e06c75');
+
+svg2.selectAll('.time-label')
+  .data(results)
+  .join('text')
+  .attr('class', 'time-label')
+  .attr('x', r => x2(r.workers) + 8)
+  .attr('y', r => y2(r.total_time_secs) - 8)
+  .attr('fill', '#e0e0e0')
+  .attr('font-size', '11px')
+  .text(r => r.total_time_secs.toFixed(1) + 's');
+</script>
+</body>
+</html>"#,
+        url = url,
+        speedup = speedup,
+        max_pages_per_sec = max_pages_per_sec,
+        results_len = results.len(),
+        results_json = results_json,
+    );
+
+    fs::write(path, html).expect("Could not write benchmark report");
+}

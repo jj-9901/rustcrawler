@@ -1,0 +1,37 @@
+[
+  {
+    "workers": 1,
+    "pages_crawled": 20,
+    "total_time_secs": 24.135229667,
+    "pages_per_sec": 0.8286641675237886,
+    "avg_response_ms": 1185
+  },
+  {
+    "workers": 2,
+    "pages_crawled": 20,
+    "total_time_secs": 13.826900942,
+    "pages_per_sec": 1.4464557230788324,
+    "avg_response_ms": 1188
+  },
+  {
+    "workers": 4,
+    "pages_crawled": 20,
+    "total_time_secs": 7.961017135,
+    "pages_per_sec": 2.5122417978566505,
+    "avg_response_ms": 1214
+  },
+  {
+    "workers": 8,
+    "pages_crawled": 20,
+    "total_time_secs": 5.581252131,
+    "pages_per_sec": 3.5834252835333875,
+    "avg_response_ms": 1225
+  },
+  {
+    "workers": 16,
+    "pages_crawled": 20,
+    "total_time_secs": 4.422310087,
+    "pages_per_sec": 4.52252320767664,
+    "avg_response_ms": 1301
+  }
+]
