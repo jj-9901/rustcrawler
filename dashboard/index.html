@@ -10,6 +10,35 @@
 <body>
 
 <div id="tooltip"></div>
+<div id="sidebar" style="
+  position: fixed;
+  right: -380px;
+  top: 0;
+  width: 380px;
+  height: 100vh;
+  background: #1a1d2e;
+  border-left: 1px solid #2a2d3e;
+  z-index: 500;
+  overflow-y: auto;
+  transition: right 0.3s ease;
+  padding: 24px;
+">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px">
+    <h3 style="color:#abb2bf;font-size:16px">Page Details</h3>
+    <button id="sidebar-close" style="
+      background:none;border:none;color:#888;font-size:20px;cursor:pointer
+    ">✕</button>
+  </div>
+  <div id="sidebar-content"></div>
+</div>
+
+<div id="sidebar-overlay" style="
+  display:none;
+  position:fixed;
+  top:0;left:0;right:0;bottom:0;
+  background:rgba(0,0,0,0.4);
+  z-index:499;
+"></div>
 
 <header>
   <div>
@@ -168,7 +197,6 @@
       <table>
         <thead>
           <tr>
-            <th>URL</th>
             <th>Title</th>
             <th>Status</th>
             <th>Depth</th>

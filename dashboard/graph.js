@@ -162,9 +162,6 @@ function renderGraph(nodesData, edgesData) {
         .attr('marker-end', 'url(#arrow)')
         .attr('opacity', 0.7);
       tooltip.style.opacity = '0';
-    })
-    .on('click', (event, d) => {
-      window.open(d.url, '_blank');
     });
 
 

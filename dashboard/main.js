@@ -34,8 +34,7 @@ function renderTable(pages) {
 
   function draw(filtered) {
     tbody.innerHTML = filtered.map(r => `
-      <tr>
-        <td class="url-cell"><a href="${r.url}" target="_blank">${r.url}</a></td>
+      <tr onclick="openSidebarByUrl('${r.url}')" style="cursor:pointer">
         <td style="max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;
             color:#abb2bf" title="${r.title}">${r.title}</td>
         <td class="${r.status === 'ERROR' ? 'status-error' : 'status-ok'}">${r.status}</td>
@@ -145,6 +144,96 @@ function renderExternalDomains(domains) {
   `).join('');
 }
 
+function openSidebar(page) {
+  const sidebar = document.getElementById('sidebar');
+  const overlay = document.getElementById('sidebar-overlay');
+  const content = document.getElementById('sidebar-content');
+
+  const statusColor = page.status === 'ERROR' ? '#e06c75' : '#98c379';
+  const depthColors = ['#e06c75','#98c379','#61afef','#e5c07b','#c678dd','#56b6c2'];
+  const depthColor  = depthColors[page.depth % depthColors.length] || '#888';
+
+  content.innerHTML = `
+    <div style="margin-bottom:20px">
+      <div style="font-size:11px;color:#888;text-transform:uppercase;margin-bottom:6px">URL</div>
+      <a href="${page.url}" target="_blank" style="
+        color:#61afef;font-size:12px;word-break:break-all;line-height:1.5
+      ">${page.url}</a>
+    </div>
+
+    <div style="margin-bottom:20px">
+      <div style="font-size:11px;color:#888;text-transform:uppercase;margin-bottom:6px">Title</div>
+      <div style="color:#e0e0e0;font-size:14px">${page.title || 'No title'}</div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px">
+      <div style="background:#0f1117;border-radius:8px;padding:12px">
+        <div style="font-size:11px;color:#888;margin-bottom:4px">STATUS</div>
+        <div style="font-size:16px;font-weight:700;color:${statusColor}">${page.status}</div>
+      </div>
+      <div style="background:#0f1117;border-radius:8px;padding:12px">
+        <div style="font-size:11px;color:#888;margin-bottom:4px">DEPTH</div>
+        <div style="font-size:16px;font-weight:700;color:${depthColor}">${page.depth}</div>
+      </div>
+      <div style="background:#0f1117;border-radius:8px;padding:12px">
+        <div style="font-size:11px;color:#888;margin-bottom:4px">RESPONSE</div>
+        <div style="font-size:16px;font-weight:700;color:#e5c07b">
+          ${page.response_time_ms === '—' ? '—' : page.response_time_ms + 'ms'}
+        </div>      
+      </div>
+      <div style="background:#0f1117;border-radius:8px;padding:12px">
+        <div style="font-size:11px;color:#888;margin-bottom:4px">SIZE</div>
+        <div style="font-size:16px;font-weight:700;color:#61afef">${formatBytes(page.size_bytes)}</div>
+      </div>
+      <div style="background:#0f1117;border-radius:8px;padding:12px">
+        <div style="font-size:11px;color:#888;margin-bottom:4px">LINKS</div>
+        <div style="font-size:16px;font-weight:700;color:#98c379">${page.links_found}</div>
+      </div>
+      <div style="background:#0f1117;border-radius:8px;padding:12px">
+        <div style="font-size:11px;color:#888;margin-bottom:4px">PAGERANK</div>
+        <div style="font-size:16px;font-weight:700;color:#c678dd">${(page.pagerank||0).toFixed(4)}</div>
+      </div>
+    </div>
+
+    ${page.redirects > 0 ? `
+    <div style="margin-bottom:20px;background:#0f1117;border-radius:8px;padding:12px">
+      <div style="font-size:11px;color:#888;margin-bottom:4px">REDIRECTS</div>
+      <div style="color:#e5c07b">${page.redirects} hop(s)</div>
+    </div>` : ''}
+
+    ${page.is_duplicate ? `
+    <div style="margin-bottom:20px;background:#0f1117;border-radius:8px;padding:12px;
+        border:1px solid #e06c75">
+      <div style="color:#e06c75;font-size:13px">⚠ Possible duplicate page</div>
+    </div>` : ''}
+
+    <div style="margin-bottom:20px">
+      <div style="font-size:11px;color:#888;text-transform:uppercase;margin-bottom:10px">
+        PageRank Score
+      </div>
+      <div style="background:#2a2d3e;border-radius:4px;height:8px">
+        <div style="
+          height:8px;border-radius:4px;background:#c678dd;
+          width:${Math.min((page.pagerank||0) * 5000, 100)}%
+        "></div>
+      </div>
+    </div>
+  `;
+
+  sidebar.style.right = '0';
+  overlay.style.display = 'block';
+}
+
+function closeSidebar() {
+  document.getElementById('sidebar').style.right = '-380px';
+  document.getElementById('sidebar-overlay').style.display = 'none';
+}
+
+function openSidebarByUrl(url) {
+  const page = window.__CRAWL_PAGES__.find(p => p.url === url);
+  if (page) openSidebar(page);
+}
+
 // Boot
 document.addEventListener('DOMContentLoaded', () => {
   const stats = window.__CRAWL_STATS__;
@@ -160,6 +249,33 @@ document.addEventListener('DOMContentLoaded', () => {
   renderHealth(stats);
   renderExternalDomains(stats.external_domains);
   renderGraph(nodes, edges);
+  setTimeout(() => {
+    d3.selectAll('circle').on('click', null);
+    d3.selectAll('circle').on('click.sidebar', (event, d) => {
+      event.preventDefault();
+      event.stopPropagation();
+      const page = window.__CRAWL_PAGES__.find(p => p.url === d.url);
+      if (page) {
+        openSidebar(page);
+      } else {
+        // Node exists in graph but wasn't crawled — show basic info
+        openSidebar({
+          url: d.url,
+          title: d.label || 'Not crawled',
+          status: 'Not crawled',
+          depth: d.depth === 99 ? '—' : d.depth,
+          response_time_ms: '—',
+          size_bytes: 0,
+          links_found: '—',
+          pagerank: d.pagerank || 0,
+          redirects: 0,
+          is_duplicate: false,
+        });
+      }
+    });
+  }, 1000);
+  document.getElementById('sidebar-close').onclick = closeSidebar;
+  document.getElementById('sidebar-overlay').onclick = closeSidebar;
 
   // Depth color toggle — must be set AFTER renderGraph runs
   const depthColorMap = ['#e06c75', '#98c379', '#61afef', '#e5c07b', '#c678dd', '#56b6c2'];

@@ -1,10 +1,10 @@
-use crate::fetcher::fetch_page;
 use crate::models::{LinkEdge, PageRecord};
 use crate::parser::{extract_links, extract_title};
 use futures::future::join_all;
 use std::collections::HashSet;
 use std::sync::Arc;
 use tokio::sync::Mutex;
+use crate::fetcher::{fetch_page, is_allowed_by_robots, make_robots_cache};
 
 pub async fn crawl(
     start_url: &str,
@@ -18,6 +18,7 @@ pub async fn crawl(
         .build()
         .unwrap();
 
+    let robots_cache = make_robots_cache();
     let visited: Arc<Mutex<HashSet<String>>> = Arc::new(Mutex::new(HashSet::new()));
     let pages_crawled: Arc<Mutex<u32>> = Arc::new(Mutex::new(0));
     let records: Arc<Mutex<Vec<PageRecord>>> = Arc::new(Mutex::new(Vec::new()));
@@ -63,8 +64,14 @@ pub async fn crawl(
                 let pages_crawled = Arc::clone(&pages_crawled);
                 let records = Arc::clone(&records);
                 let edges = Arc::clone(&edges);
+                let robots_cache = Arc::clone(&robots_cache);
 
                 tokio::spawn(async move {
+                    // Check robots.txt
+                    if !is_allowed_by_robots(&client, &url, &robots_cache).await {
+                        println!("  [ROBOTS] Skipped: {}", url);
+                        return;
+                    }
                     match fetch_page(&client, &url).await {
                         Ok(result) => {
                             *pages_crawled.lock().await += 1;

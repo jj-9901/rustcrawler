@@ -1,3 +1,76 @@
+use std::collections::HashMap;
+use std::sync::Arc;
+use tokio::sync::Mutex;
+
+pub type RobotsCache = Arc<Mutex<HashMap<String, Vec<String>>>>;
+
+pub fn make_robots_cache() -> RobotsCache {
+    Arc::new(Mutex::new(HashMap::new()))
+}
+
+pub async fn is_allowed_by_robots(
+    client: &reqwest::Client,
+    url: &str,
+    cache: &RobotsCache,
+) -> bool {
+    let parsed = match url::Url::parse(url) {
+        Ok(u) => u,
+        Err(_) => return true,
+    };
+
+    let host = match parsed.host_str() {
+        Some(h) => h.to_string(),
+        None => return true,
+    };
+
+    let scheme = parsed.scheme();
+    let robots_url = format!("{}://{}/robots.txt", scheme, host);
+
+    // Check cache first
+    {
+        let cache = cache.lock().await;
+        if let Some(disallowed) = cache.get(&host) {
+            let path = parsed.path();
+            return !disallowed.iter().any(|d| path.starts_with(d.as_str()));
+        }
+    }
+
+    // Fetch robots.txt
+    let disallowed = match client.get(&robots_url).send().await {
+        Ok(resp) if resp.status().is_success() => {
+            let text = resp.text().await.unwrap_or_default();
+            parse_robots_txt(&text)
+        }
+        _ => vec![],
+    };
+
+    let path = parsed.path();
+    let allowed = !disallowed.iter().any(|d| path.starts_with(d.as_str()));
+
+    cache.lock().await.insert(host, disallowed);
+    allowed
+}
+
+fn parse_robots_txt(text: &str) -> Vec<String> {
+    let mut disallowed = vec![];
+    let mut applies = false;
+
+    for line in text.lines() {
+        let line = line.trim();
+        if line.starts_with("User-agent:") {
+            let agent = line["User-agent:".len()..].trim();
+            applies = agent == "*" || agent == "RustCrawler";
+        } else if applies && line.starts_with("Disallow:") {
+            let path = line["Disallow:".len()..].trim().to_string();
+            if !path.is_empty() {
+                disallowed.push(path);
+            }
+        }
+    }
+
+    disallowed
+}
+
 use std::time::Instant;
 
 pub struct FetchResult {
